@@ -39,6 +39,20 @@ export default function Contexto() {
         </div>
       </div>
 
+      {contextoContent.dimensions && (
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {contextoContent.dimensions.map((dim) => (
+            <div
+              key={dim.title}
+              className="rounded-2xl border border-primary-100 bg-white p-6 shadow-sm transition hover:shadow-md"
+            >
+              <h3 className="font-semibold text-primary-800">{dim.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">{dim.text}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
       {/* Tarjetas informativas */}
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {contextoContent.stats.map((stat, index) => {

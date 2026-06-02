@@ -20,6 +20,16 @@ export default function Problematica() {
         <p className="mx-auto mt-8 max-w-3xl whitespace-pre-line text-left text-base leading-relaxed text-slate-600 sm:text-lg">
           {problematicaContent.text}
         </p>
+        {problematicaContent.definitionBox && (
+          <div className="mx-auto mt-10 max-w-3xl rounded-2xl border-2 border-primary-200 bg-primary-50/50 p-6 text-left shadow-sm">
+            <h3 className="font-serif text-lg font-bold text-primary-900">
+              {problematicaContent.definitionBox.title}
+            </h3>
+            <p className="mt-3 text-base leading-relaxed text-slate-700">
+              {problematicaContent.definitionBox.text}
+            </p>
+          </div>
+        )}
       </div>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

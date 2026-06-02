@@ -20,12 +20,13 @@ export default function Hero() {
       <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-12 px-4 py-16 sm:px-6 lg:flex-row lg:gap-16 lg:py-24 lg:px-8">
         {/* Texto principal */}
         <div className="flex-1 text-center lg:text-left">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm text-primary-100 backdrop-blur-sm">
+          <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm text-primary-100 backdrop-blur-sm">
             <Sparkles className="h-4 w-4" aria-hidden="true" />
-            <span>UNIMINUTO · Responsabilidad Social</span>
+            <span>{heroContent.badge}</span>
           </div>
+          <p className="text-sm font-medium text-primary-200">UNIMINUTO · Responsabilidad Social</p>
 
-          <h1 className="font-serif text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="mt-3 font-serif text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
             {heroContent.title}
           </h1>
 

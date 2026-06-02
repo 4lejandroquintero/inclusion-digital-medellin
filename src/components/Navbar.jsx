@@ -43,13 +43,13 @@ export default function Navbar() {
           <span className="text-lg font-semibold tracking-tight">Inclusión Digital</span>
         </button>
 
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-0.5 md:flex">
           {navLinks.map((link) => (
             <li key={link.id}>
               <button
                 type="button"
                 onClick={() => handleNavClick(link.id)}
-                className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                className={`rounded-lg px-2 py-2 text-xs font-medium transition-colors xl:px-3 xl:text-sm ${
                   scrolled
                     ? 'text-slate-600 hover:bg-primary-50 hover:text-primary-700'
                     : 'text-primary-100 hover:bg-white/10 hover:text-white'
