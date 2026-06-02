@@ -12,6 +12,26 @@ export default function Georeferenciacion() {
         badge="Actuar · Anexo georeferenciación"
       />
 
+      {georeferenciacionContent.ubicacionNota && (
+        <div className="mt-8 rounded-xl bg-primary-50 px-6 py-5 ring-1 ring-primary-100">
+          <p className="text-sm leading-relaxed text-slate-700">
+            <strong className="text-primary-800">Ubicación:</strong>{' '}
+            {georeferenciacionContent.ubicacionNota}
+          </p>
+        </div>
+      )}
+
+      {georeferenciacionContent.jacExplicacion && (
+        <details className="mt-6 rounded-xl border border-slate-200 bg-white p-6 shadow-sm open:shadow-md">
+          <summary className="cursor-pointer text-sm font-bold text-primary-700">
+            ¿Qué es una JAC? (Junta de Acción Comunal)
+          </summary>
+          <p className="mt-4 text-sm leading-relaxed text-slate-600">
+            {georeferenciacionContent.jacExplicacion}
+          </p>
+        </details>
+      )}
+
       <div className="mt-12 grid gap-10 lg:grid-cols-2">
         <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200">
           <iframe
@@ -42,7 +62,9 @@ export default function Georeferenciacion() {
       <div className="mt-10 grid gap-6 md:grid-cols-3">
         <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100">
           <Users className="mb-3 h-8 w-8 text-primary-500" aria-hidden="true" />
-          <h4 className="font-semibold text-slate-800">Actores sociales</h4>
+          <h4 className="font-semibold text-slate-800">
+            {georeferenciacionContent.actoresTitle || 'Actores sociales'}
+          </h4>
           <ul className="mt-3 space-y-2">
             {georeferenciacionContent.actores.map((a) => (
               <li key={a} className="text-sm text-slate-600">

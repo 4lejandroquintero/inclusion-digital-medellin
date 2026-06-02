@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import EntradaParte2 from './components/EntradaParte2'
+import EnfoqueTrabajo from './components/EnfoqueTrabajo'
 import PreguntaOrientadora from './components/PreguntaOrientadora'
 import Introduccion from './components/Introduccion'
 import SintesisLecturas from './components/SintesisLecturas'
@@ -26,6 +27,7 @@ function App() {
       <main>
         <Hero />
         <EntradaParte2 />
+        <EnfoqueTrabajo />
         <PreguntaOrientadora />
         <Introduccion />
         <SintesisLecturas />

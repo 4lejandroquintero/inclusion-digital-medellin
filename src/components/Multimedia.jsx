@@ -1,4 +1,4 @@
-import { Play, ExternalLink, ImageIcon } from 'lucide-react'
+import { Play, ExternalLink, Layout, Globe } from 'lucide-react'
 import SectionWrapper from './SectionWrapper'
 import SectionHeading from './SectionHeading'
 import { multimediaContent } from '../data/content'
@@ -14,6 +14,30 @@ export default function Multimedia() {
         subtitle={multimediaContent.subtitle}
         badge="Multimedia"
       />
+
+      <div className="mt-10 rounded-2xl border border-primary-200 bg-primary-50/60 p-6 sm:p-8">
+        <div className="flex items-start gap-4">
+          <Layout className="h-10 w-10 shrink-0 text-primary-600" aria-hidden="true" />
+          <div>
+            <h3 className="font-serif text-xl font-bold text-slate-900">
+              {multimediaContent.blogPresentation.title}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-slate-600">
+              {multimediaContent.blogPresentation.text}
+            </p>
+          </div>
+        </div>
+        <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+          {multimediaContent.blogPresentation.sections.map((s) => (
+            <li
+              key={s}
+              className="rounded-lg bg-white px-4 py-3 text-sm text-slate-700 shadow-sm ring-1 ring-primary-100"
+            >
+              {s}
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className="mt-12 grid gap-10 lg:grid-cols-5">
         <div className="lg:col-span-3">
@@ -46,44 +70,19 @@ export default function Multimedia() {
 
         <div className="flex flex-col justify-center gap-4 lg:col-span-2">
           <p className="text-sm leading-relaxed text-slate-600">
-            Recurso audiovisual obligatorio de la semana. La charla de Leonardo Izquierdo invita a
-            repensar el desarrollo sostenible más allá del paradigma tradicional, en diálogo con las
-            lecturas de Jiménez Herrero (2018).
+            {multimediaContent.videoContext}
           </p>
           <a
             href="https://sdgs.un.org/goals"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:text-primary-800"
+            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-primary-700 shadow-sm transition hover:border-primary-300"
           >
+            <Globe className="h-5 w-5" aria-hidden="true" />
             Agenda 2030 y los 17 ODS (ONU)
             <ExternalLink className="h-4 w-4" aria-hidden="true" />
           </a>
         </div>
-      </div>
-
-      <div className="mt-12 grid gap-6 sm:grid-cols-3">
-        {multimediaContent.gallery.map((item) => (
-          <figure
-            key={item.caption}
-            className="group overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-slate-100"
-          >
-            <div className="relative overflow-hidden">
-              <img
-                src={item.src}
-                alt={item.alt}
-                className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-              <div className="absolute top-3 right-3 rounded-lg bg-white/90 p-2">
-                <ImageIcon className="h-4 w-4 text-primary-600" aria-hidden="true" />
-              </div>
-            </div>
-            <figcaption className="p-4 text-center text-sm font-medium text-slate-700">
-              {item.caption}
-            </figcaption>
-          </figure>
-        ))}
       </div>
     </SectionWrapper>
   )
