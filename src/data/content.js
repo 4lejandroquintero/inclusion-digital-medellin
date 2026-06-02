@@ -1,7 +1,7 @@
 /** Contenido textual del blog académico — Parte 2: contexto y problemática */
 
 export const heroContent = {
-  badge: 'Blog · Segunda entrada',
+  badge: 'Tercera entrada del blog · Segunda parte del proyecto',
   title: 'Puertas digitales abiertas',
   subtitle:
     'Territorio, equidad y desarrollo integral sostenible en la Comuna 9 de Medellín.',
@@ -12,10 +12,47 @@ export const heroContent = {
     'Imagen ilustrativa de referencia (no corresponde a visita de campo del proyecto)',
 }
 
+export const planAccionContent = {
+  id: 'plan-accion',
+  title: 'Retoma del plan de acción',
+  subtitle:
+    'Articulación entre el plan de acción del Proyecto Social de Formación y las actividades de las semanas 3 y 4.',
+  intro:
+    'El plan de acción organiza el proyecto en fases. En esta entrada (tercera del blog / segunda parte del contenido) se retoman las fases de diagnóstico y planificación territorial, que corresponden a las actividades de las semanas 3 y 4 del curso.',
+  phases: [
+    {
+      fase: '1. Identificación',
+      actividades: 'Definición del tema, población objetivo y problemática (brecha digital).',
+      avance: 'Consolidado en secciones de problemática y justificación.',
+    },
+    {
+      fase: '2. Diagnóstico territorial',
+      actividades: 'Georeferenciación y caracterización de la Comuna 9 — Buenos Aires.',
+      avance: 'Semana 3 · formato anexo y mapa en este blog.',
+    },
+    {
+      fase: '3. Diagnóstico participativo',
+      actividades: 'Diseño (y futura aplicación) de encuesta sobre competencias digitales.',
+      avance: 'Semana 4 · instrumento diseñado; aplicación en campo pendiente.',
+    },
+    {
+      fase: '4. Ejecución',
+      actividades: 'Talleres de inclusión digital y acompañamiento a la comunidad.',
+      avance: 'Planificado; depende de convocatoria con JAC y resultados de encuesta.',
+    },
+    {
+      fase: '5. Evaluación y socialización',
+      actividades: 'Valoración de impacto y entrega de resultados a actores locales.',
+      avance: 'Previsto al cierre del proyecto.',
+    },
+  ],
+  nota: 'Si el curso exige adjuntar el “Formato de Georeferenciación” en Word o PDF por aparte (Moodle), usa los mismos datos de la sección Territorio de este blog para llenarlo.',
+}
+
 export const entradaParte2 = {
   id: 'entrada-2',
   week: 'Semana 5–6',
-  partLabel: 'Segunda parte del proyecto',
+  partLabel: 'Segunda parte del proyecto · Tercera entrada del blog',
   title: 'Contexto y definición de la problemática',
   lead: `Esta entrada retoma el Proyecto Social de Formación sobre inclusión digital en la Comuna 9 (Buenos Aires), Medellín, Antioquia. Se presenta el contexto, la problemática y el diseño de dos actividades del plan de acción (semanas 3 y 4), con base en lecturas académicas y documentación territorial —en fase de planificación, sin visitas ni encuestas en campo aún.`,
   highlights: [
@@ -89,10 +126,22 @@ export const sintesisLecturas = {
         'Los talleres de inclusión digital se plantean como transición social: fortalecen capacidades sin depender solo de infraestructura, sino de aprendizaje colectivo.',
     },
   ],
+  investigacionAdicional: {
+    title: 'Investigación adicional (fuentes complementarias)',
+    items: [
+      {
+        authors: 'González Campo, C. H., Ico Brath, D. & Murillo Vargas, G. (2022)',
+        idea: 'Las universidades públicas colombianas deben integrar los ODS en sus procesos formativos para cumplir la Agenda 2030; el proyecto de RSU es un escenario donde esa integración se vuelve concreta mediante la reflexión ODS en cada actividad.',
+      },
+      {
+        authors: 'Kyburz Graber, R. (2019)',
+        idea: 'La educación ambiental y la investigación territorial muestran que el cambio sostenible requiere datos, participación y formación continua — paralelo a la alfabetización digital comunitaria.',
+      },
+    ],
+  },
   complementarias: [
-    'González Campo, C. H., Ico Brath, D. & Murillo Vargas, G. (2022): integración de los ODS en universidades públicas colombianas.',
-    'Kyburz Graber, R. (2019): perspectiva europea de investigación ambiental y educación.',
-    'Izquierdo, L. (2017, TEDx): desarrollo sostenible más allá del paradigma tradicional.',
+    'Izquierdo, L. (2017): video TED sobre desarrollo sostenible más allá del paradigma (sección Multimedia).',
+    'Naciones Unidas (2015): Agenda 2030 y los 17 ODS.',
   ],
 }
 

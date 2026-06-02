@@ -57,8 +57,25 @@ export default function SintesisLecturas() {
         ))}
       </div>
 
+      {sintesisLecturas.investigacionAdicional && (
+        <div className="mt-10 space-y-4">
+          <h4 className="text-center font-serif text-xl font-bold text-slate-900">
+            {sintesisLecturas.investigacionAdicional.title}
+          </h4>
+          {sintesisLecturas.investigacionAdicional.items.map((item) => (
+            <div
+              key={item.authors}
+              className="rounded-xl border border-slate-100 bg-white p-5 shadow-sm"
+            >
+              <p className="text-sm font-semibold text-primary-700">{item.authors}</p>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">{item.idea}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
       <div className="mt-10 rounded-xl border border-dashed border-primary-200 bg-primary-50/50 p-6">
-        <h4 className="text-sm font-bold text-slate-800">Fuentes complementarias consultadas</h4>
+        <h4 className="text-sm font-bold text-slate-800">Otros recursos multimedia y bibliográficos</h4>
         <ul className="mt-3 space-y-2">
           {sintesisLecturas.complementarias.map((item) => (
             <li key={item} className="text-sm text-slate-600">

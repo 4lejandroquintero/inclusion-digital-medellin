@@ -7,6 +7,7 @@ import Introduccion from './components/Introduccion'
 import SintesisLecturas from './components/SintesisLecturas'
 import Problematica from './components/Problematica'
 import Contexto from './components/Contexto'
+import PlanAccion from './components/PlanAccion'
 import Georeferenciacion from './components/Georeferenciacion'
 import ActividadesPlan from './components/ActividadesPlan'
 import DesarrolloIntegral from './components/DesarrolloIntegral'
@@ -33,6 +34,7 @@ function App() {
         <SintesisLecturas />
         <Contexto />
         <Problematica />
+        <PlanAccion />
         <Georeferenciacion />
         <ActividadesPlan />
         <DesarrolloIntegral />

@@ -5,6 +5,7 @@ export const navLinks = [
   { id: 'lecturas', label: 'Lecturas' },
   { id: 'contexto', label: 'Contexto' },
   { id: 'problematica', label: 'Problemática' },
+  { id: 'plan-accion', label: 'Plan' },
   { id: 'georeferenciacion', label: 'Territorio' },
   { id: 'actividades', label: 'Actividades' },
   { id: 'desarrollo-integral', label: 'DIS' },
