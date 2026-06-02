@@ -1,29 +1,42 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, Monitor } from 'lucide-react'
-import { navLinks } from '../data/navigation'
+import { navLinks } from '../config/views'
 
-/**
- * Barra de navegación fija con scroll suave y menú responsive.
- */
-export default function Navbar() {
+export default function Navbar({ activeView, onNavigate }) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+
+  const isHome = activeView === 'inicio'
+  const solidNav = !isHome || scrolled
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handleScroll)
+    handleScroll()
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [activeView])
 
   const handleNavClick = (id) => {
     setIsOpen(false)
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    onNavigate(id)
+  }
+
+  const linkClass = (id) => {
+    const active = activeView === id
+    if (solidNav) {
+      return active
+        ? 'bg-primary-100 text-primary-800'
+        : 'text-slate-600 hover:bg-primary-50 hover:text-primary-700'
+    }
+    return active
+      ? 'bg-white/20 text-white'
+      : 'text-primary-100 hover:bg-white/10 hover:text-white'
   }
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        solidNav
           ? 'bg-white/95 backdrop-blur-md shadow-md shadow-primary-900/5'
           : 'bg-transparent'
       }`}
@@ -33,11 +46,11 @@ export default function Navbar() {
           type="button"
           onClick={() => handleNavClick('inicio')}
           className={`flex items-center gap-2 transition-colors ${
-            scrolled ? 'text-primary-800 hover:text-primary-600' : 'text-white hover:text-primary-100'
+            solidNav ? 'text-primary-800 hover:text-primary-600' : 'text-white hover:text-primary-100'
           }`}
         >
           <Monitor
-            className={`h-7 w-7 ${scrolled ? 'text-primary-600' : 'text-primary-200'}`}
+            className={`h-7 w-7 ${solidNav ? 'text-primary-600' : 'text-primary-200'}`}
             aria-hidden="true"
           />
           <span className="text-lg font-semibold tracking-tight">Inclusión Digital</span>
@@ -49,11 +62,8 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={() => handleNavClick(link.id)}
-                className={`rounded-lg px-2 py-2 text-xs font-medium transition-colors xl:px-3 xl:text-sm ${
-                  scrolled
-                    ? 'text-slate-600 hover:bg-primary-50 hover:text-primary-700'
-                    : 'text-primary-100 hover:bg-white/10 hover:text-white'
-                }`}
+                aria-current={activeView === link.id ? 'page' : undefined}
+                className={`rounded-lg px-2 py-2 text-xs font-medium transition-colors xl:px-3 xl:text-sm ${linkClass(link.id)}`}
               >
                 {link.label}
               </button>
@@ -64,9 +74,7 @@ export default function Navbar() {
         <button
           type="button"
           className={`rounded-lg p-2 transition-colors md:hidden ${
-            scrolled
-              ? 'text-slate-600 hover:bg-primary-50'
-              : 'text-white hover:bg-white/10'
+            solidNav ? 'text-slate-600 hover:bg-primary-50' : 'text-white hover:bg-white/10'
           }`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? 'Cerrar menú' : 'Abrir menú'}
@@ -78,13 +86,18 @@ export default function Navbar() {
 
       {isOpen && (
         <div className="border-t border-slate-100 bg-white/98 backdrop-blur-md md:hidden">
-          <ul className="flex flex-col gap-1 px-4 py-4">
+          <ul className="flex flex-col gap-1 px-4 py-4 max-h-[70vh] overflow-y-auto">
             {navLinks.map((link) => (
               <li key={link.id}>
                 <button
                   type="button"
                   onClick={() => handleNavClick(link.id)}
-                  className="w-full rounded-lg px-4 py-3 text-left text-sm font-medium text-slate-600 transition-colors hover:bg-primary-50 hover:text-primary-700"
+                  aria-current={activeView === link.id ? 'page' : undefined}
+                  className={`w-full rounded-lg px-4 py-3 text-left text-sm font-medium transition-colors ${
+                    activeView === link.id
+                      ? 'bg-primary-100 text-primary-800'
+                      : 'text-slate-600 hover:bg-primary-50 hover:text-primary-700'
+                  }`}
                 >
                   {link.label}
                 </button>

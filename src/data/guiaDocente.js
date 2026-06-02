@@ -15,9 +15,9 @@ export const guiaDocenteContent = {
       requisito: 'Título, segunda parte del proyecto y tercera entrada del blog',
     },
     {
-      id: 'pregunta-orientadora',
+      id: 'entrada-2',
       label: '2. Pregunta orientadora (Ver)',
-      requisito: 'Integración del desarrollo integral sostenible en el diseño de actividades',
+      requisito: 'Integración del DIS en el diseño de actividades (sección Entrada II)',
     },
     {
       id: 'lecturas',
@@ -55,18 +55,23 @@ export const guiaDocenteContent = {
       requisito: 'Articulación DIS — actividades',
     },
     {
+      id: 'objetivos',
+      label: '10. Objetivos y justificación',
+      requisito: 'Objetivos del proyecto y fundamentación',
+    },
+    {
       id: 'multimedia',
-      label: '10. Recursos multimedia',
+      label: '11. Recursos multimedia',
       requisito: 'Presentación en blog y video de bibliografía',
     },
     {
       id: 'metacognicion',
-      label: '11. Metacognición',
+      label: '12. Metacognición',
       requisito: 'Devolución de la actividad',
     },
     {
       id: 'referencias',
-      label: '12. Referencias',
+      label: '13. Referencias',
       requisito: 'Fuentes en formato APA',
     },
   ],

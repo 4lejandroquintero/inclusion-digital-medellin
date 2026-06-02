@@ -1,10 +1,11 @@
 import { GraduationCap, ExternalLink, ChevronRight } from 'lucide-react'
 import SectionWrapper from './SectionWrapper'
 import { guiaDocenteContent } from '../data/guiaDocente'
+import { resolveViewId } from '../config/views'
 
-export default function GuiaDocente() {
-  const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+export default function GuiaDocente({ onNavigate }) {
+  const goTo = (sectionId) => {
+    onNavigate?.(resolveViewId(sectionId))
   }
 
   return (
@@ -43,10 +44,10 @@ export default function GuiaDocente() {
             </p>
             <ol className="space-y-2">
               {guiaDocenteContent.ruta.map((paso) => (
-                <li key={paso.id}>
+                <li key={paso.label}>
                   <button
                     type="button"
-                    onClick={() => scrollTo(paso.id)}
+                    onClick={() => goTo(paso.id)}
                     className="group flex w-full items-start gap-3 rounded-lg border border-slate-100 bg-slate-50/80 px-4 py-3 text-left transition hover:border-primary-200 hover:bg-primary-50"
                   >
                     <ChevronRight

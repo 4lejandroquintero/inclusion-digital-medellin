@@ -1,50 +1,40 @@
+import { useState, useEffect, useCallback } from 'react'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import EntradaParte2 from './components/EntradaParte2'
-import GuiaDocente from './components/GuiaDocente'
-import EnfoqueTrabajo from './components/EnfoqueTrabajo'
-import PreguntaOrientadora from './components/PreguntaOrientadora'
-import Introduccion from './components/Introduccion'
-import SintesisLecturas from './components/SintesisLecturas'
-import Problematica from './components/Problematica'
-import Contexto from './components/Contexto'
-import PlanAccion from './components/PlanAccion'
-import Georeferenciacion from './components/Georeferenciacion'
-import ActividadesPlan from './components/ActividadesPlan'
-import DesarrolloIntegral from './components/DesarrolloIntegral'
-import Objetivos from './components/Objetivos'
-import Justificacion from './components/Justificacion'
-import Multimedia from './components/Multimedia'
-import Metacognicion from './components/Metacognicion'
-import Referencias from './components/Referencias'
+import ViewPanel from './components/ViewPanel'
 import Footer from './components/Footer'
+import { DEFAULT_VIEW, resolveViewId, viewConfig } from './config/views'
+
+function getInitialView() {
+  const hash = window.location.hash.replace('#', '')
+  return hash && viewConfig[hash] ? hash : DEFAULT_VIEW
+}
 
 /**
- * Blog académico — Segunda entrada: contexto y definición de la problemática.
+ * Blog académico — navegación por vistas (una sección visible a la vez).
  */
 function App() {
+  const [activeView, setActiveView] = useState(getInitialView)
+
+  const navigate = useCallback((viewId) => {
+    const resolved = resolveViewId(viewId)
+    setActiveView(resolved)
+    window.history.replaceState(null, '', `#${resolved}`)
+  }, [])
+
+  useEffect(() => {
+    const onHashChange = () => {
+      const hash = window.location.hash.replace('#', '')
+      if (hash && viewConfig[hash]) setActiveView(hash)
+    }
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
+
   return (
     <>
-      <Navbar />
-      <main>
-        <Hero />
-        <GuiaDocente />
-        <EntradaParte2 />
-        <EnfoqueTrabajo />
-        <PreguntaOrientadora />
-        <Introduccion />
-        <SintesisLecturas />
-        <Contexto />
-        <Problematica />
-        <PlanAccion />
-        <Georeferenciacion />
-        <ActividadesPlan />
-        <DesarrolloIntegral />
-        <Objetivos />
-        <Justificacion />
-        <Multimedia />
-        <Metacognicion />
-        <Referencias />
+      <Navbar activeView={activeView} onNavigate={navigate} />
+      <main className="min-h-screen bg-slate-50">
+        <ViewPanel viewId={activeView} onNavigate={navigate} />
       </main>
       <Footer />
     </>
