@@ -5,8 +5,8 @@ import { heroContent } from '../data/content'
  * Sección principal (hero) con título, CTA e ilustración.
  */
 export default function Hero() {
-  const scrollToIntro = () => {
-    document.getElementById('inicio')?.scrollIntoView({ behavior: 'smooth' })
+  const scrollToGuia = () => {
+    document.getElementById('guia-docente')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -36,7 +36,7 @@ export default function Hero() {
 
           <button
             type="button"
-            onClick={scrollToIntro}
+            onClick={scrollToGuia}
             className="mt-8 inline-flex items-center gap-2 rounded-xl bg-white px-8 py-3.5 text-base font-semibold text-primary-800 shadow-lg shadow-primary-900/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-50 hover:shadow-xl"
           >
             {heroContent.cta}

@@ -5,7 +5,7 @@ export const heroContent = {
   title: 'Puertas digitales abiertas',
   subtitle:
     'Territorio, equidad y desarrollo integral sostenible en la Comuna 9 de Medellín.',
-  cta: 'Leer la entrada',
+  cta: 'Ver guía para el docente',
   image:
     'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=900&q=80',
   imageAlt:
