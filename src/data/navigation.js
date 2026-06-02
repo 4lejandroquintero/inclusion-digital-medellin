@@ -1,7 +1,7 @@
 /** Enlaces del menú principal con scroll suave */
 export const navLinks = [
-  { id: 'guia-docente', label: 'Guía' },
-  { id: 'enfoque-trabajo', label: 'Enfoque' },
+  { id: 'guia-docente', label: 'Índice' },
+  { id: 'enfoque-trabajo', label: 'Metodología' },
   { id: 'entrada-2', label: 'Entrada II' },
   { id: 'lecturas', label: 'Lecturas' },
   { id: 'contexto', label: 'Contexto' },

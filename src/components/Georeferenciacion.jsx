@@ -12,19 +12,10 @@ export default function Georeferenciacion() {
         badge="Actuar · Anexo georeferenciación"
       />
 
-      {georeferenciacionContent.ubicacionNota && (
-        <div className="mt-8 rounded-xl bg-primary-50 px-6 py-5 ring-1 ring-primary-100">
-          <p className="text-sm leading-relaxed text-slate-700">
-            <strong className="text-primary-800">Ubicación:</strong>{' '}
-            {georeferenciacionContent.ubicacionNota}
-          </p>
-        </div>
-      )}
-
       {georeferenciacionContent.jacExplicacion && (
-        <details className="mt-6 rounded-xl border border-slate-200 bg-white p-6 shadow-sm open:shadow-md">
+        <details className="mt-8 rounded-xl border border-slate-200 bg-white p-6 shadow-sm open:shadow-md">
           <summary className="cursor-pointer text-sm font-bold text-primary-700">
-            ¿Qué es una JAC? (Junta de Acción Comunal)
+            Juntas de Acción Comunal (JAC)
           </summary>
           <p className="mt-4 text-sm leading-relaxed text-slate-600">
             {georeferenciacionContent.jacExplicacion}

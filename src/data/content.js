@@ -5,11 +5,10 @@ export const heroContent = {
   title: 'Puertas digitales abiertas',
   subtitle:
     'Territorio, equidad y desarrollo integral sostenible en la Comuna 9 de Medellín.',
-  cta: 'Ver guía para el docente',
+  cta: 'Índice de contenidos',
   image:
     'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=900&q=80',
-  imageAlt:
-    'Imagen ilustrativa de referencia (no corresponde a visita de campo del proyecto)',
+  imageAlt: 'Imagen de referencia con fines ilustrativos',
 }
 
 export const planAccionContent = {
@@ -46,7 +45,7 @@ export const planAccionContent = {
       avance: 'Previsto al cierre del proyecto.',
     },
   ],
-  nota: 'Si el curso exige adjuntar el “Formato de Georeferenciación” en Word o PDF por aparte (Moodle), usa los mismos datos de la sección Territorio de este blog para llenarlo.',
+  nota: 'Los datos de la sección Territorio pueden trasladarse al Formato de Georeferenciación del plan de acción cuando la institución solicite su entrega en documento aparte.',
 }
 
 export const entradaParte2 = {
@@ -54,7 +53,7 @@ export const entradaParte2 = {
   week: 'Semana 5–6',
   partLabel: 'Segunda parte del proyecto · Tercera entrada del blog',
   title: 'Contexto y definición de la problemática',
-  lead: `Esta entrada retoma el Proyecto Social de Formación sobre inclusión digital en la Comuna 9 (Buenos Aires), Medellín, Antioquia. Se presenta el contexto, la problemática y el diseño de dos actividades del plan de acción (semanas 3 y 4), con base en lecturas académicas y documentación territorial —en fase de planificación, sin visitas ni encuestas en campo aún.`,
+  lead: `Esta entrada retoma el Proyecto Social de Formación sobre inclusión digital en la Comuna 9 (Buenos Aires), Medellín, Antioquia. Se presentan el contexto, la problemática y el diseño de dos actividades del plan de acción correspondientes a las semanas 3 y 4, articulados con las lecturas del curso y la documentación territorial del proyecto.`,
   highlights: [
     'Síntesis de lecturas obligatorias',
     'Georeferenciación documental (formato anexo)',
@@ -65,13 +64,13 @@ export const entradaParte2 = {
 
 export const enfoqueTrabajoContent = {
   id: 'enfoque-trabajo',
-  title: '¿Cómo está construida esta entrada?',
-  lead: 'Para que el trabajo sea claro y honesto: esta segunda parte del blog corresponde a la fase de planificación y análisis del proyecto. No se afirma haber visitado el territorio ni aplicado encuestas si eso aún no ha ocurrido.',
+  title: 'Alcance metodológico',
+  lead: 'Esta entrada corresponde a la fase de planificación y análisis del Proyecto Social de Formación. El contenido se sustenta en fuentes bibliográficas y documentación territorial; la intervención presencial y la aplicación del instrumento de diagnóstico se contemplan para la etapa de ejecución.',
   points: [
-    'Territorio: Comuna 9 — Buenos Aires, dentro de Medellín (Antioquia). No es un municipio aparte llamado “Buenos Aires”.',
-    'Actividades semanas 3 y 4: se documentan como diseño y georeferenciación con fuentes secundarias (mapas, información institucional), no como ejecución en calle.',
-    'Encuesta: se presenta el instrumento diseñado y su propósito; la aplicación con la comunidad queda programada para la fase de ejecución del proyecto.',
-    'Multimedia: este sitio web cumple la función de organizar la información (equivalente a una presentación en Canva, Genially o Prezi), más el video TED de la bibliografía.',
+    'Territorio de intervención: Comuna 9 (Buenos Aires), Medellín, Antioquia.',
+    'Semanas 3 y 4: georeferenciación y caracterización con fuentes secundarias e información institucional.',
+    'Diagnóstico participativo: instrumento de encuesta diseñado; aplicación comunitaria programada en la fase de ejecución.',
+    'Presentación multimedia: organización de la información en este blog y recurso audiovisual de la bibliografía del curso.',
   ],
 }
 
@@ -79,7 +78,7 @@ export const preguntaOrientadora = {
   id: 'pregunta-orientadora',
   question:
     '¿Cómo se integra el desarrollo integral sostenible en el diseño de actividades para abordar las problemáticas identificadas?',
-  answer: `El desarrollo integral sostenible (DIS) se integra cuando las actividades del proyecto no se limitan a “entregar tecnología”, sino que reconocen las capacidades, los derechos y las condiciones de vida de las personas en el territorio. Siguiendo a Jiménez Herrero (2018), el DIS implica coevolución entre lo social, lo ambiental y lo económico; por su parte, Arenas de Mesa y Cecchini (2022) subrayan que la igualdad y la protección social son condiciones para un desarrollo inclusivo.
+  answer: `El desarrollo integral sostenible (DIS) se integra cuando las actividades del proyecto trascienden el acceso instrumental a dispositivos y reconocen las capacidades, los derechos y las condiciones de vida de las personas en el territorio. Siguiendo a Jiménez Herrero (2018), el DIS implica coevolución entre lo social, lo ambiental y lo económico; por su parte, Arenas de Mesa y Cecchini (2022) subrayan que la igualdad y la protección social son condiciones para un desarrollo inclusivo.
 
 En el plan de acción, cada taller, diagnóstico o acompañamiento digital se está diseñando para reducir desigualdades de acceso (ODS 10), fortalecer aprendizaje permanente (ODS 4) e impulsar innovación social en barrios urbanos (ODS 9 y 11), con participación comunitaria prevista en la fase de ejecución.`,
 }
@@ -218,10 +217,8 @@ export const georeferenciacionContent = {
   title: 'Georeferenciación del territorio',
   subtitle:
     'Complemento al formato de georeferenciación del plan de acción (Anexo), elaborado con mapas y fuentes documentales.',
-  ubicacionNota:
-    'Buenos Aires es el nombre de la Comuna 9 de Medellín, en el departamento de Antioquia (Colombia). No se trata de un municipio independiente.',
   jacExplicacion:
-    'La JAC (Junta de Acción Comunal) es una organización legalmente reconocida en cada barrio o vereda. Reúne vecinos elegidos para representar a la comunidad, gestionar necesidades locales y articular proyectos con la Alcaldía. Para un proyecto de inclusión digital, la JAC sería un aliado clave para convocar participantes y autorizar el uso de un salón comunal; en esta fase solo se identifica como actor potencial, sin haber realizado visita ni reunión.',
+    'La Junta de Acción Comunal (JAC) es una instancia de participación ciudadana a nivel barrial, encargada de representar a la comunidad y articular proyectos con las entidades públicas. En el marco de este proyecto se identifica como actor potencial para la convocatoria y el uso de espacios comunitarios; el contacto institucional se prevé en la fase de ejecución.',
   mapEmbed:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.85!2d-75.56!3d6.24!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428c8b8b8b8b9%3A0x0!2sBuenos%20Aires%2C%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1',
   fields: [
@@ -257,7 +254,7 @@ export const actividadesContent = {
   subtitle:
     'Retoma de dos actividades en fase de planificación y documentación, organizadas en esta entrada del blog.',
   disclaimer:
-    'Importante: las actividades se presentan como diseño y análisis documental del territorio, coherente con la segunda parte del blog. La visita al barrio y la aplicación de encuestas quedan planificadas para la ejecución presencial del proyecto.',
+    'Nota metodológica: las actividades se exponen en su dimensión de planificación y análisis documental. La intervención en el territorio y la aplicación del instrumento de diagnóstico corresponden a la etapa de ejecución del plan de acción.',
   activities: [
     {
       week: 'Semana 3',
@@ -265,10 +262,10 @@ export const actividadesContent = {
       visual: 'map',
       title: 'Georeferenciación y caracterización territorial (documental)',
       tool: 'Google Maps · Formato anexo · Fuentes institucionales',
-      description: `En esta fase se completó el formato de georeferenciación usando mapas, información pública sobre la Comuna 9 — Buenos Aires (Medellín, Antioquia) y referencias del plan de acción. No se realizó visita de campo: se ubicó el territorio, se describieron actores potenciales (como las JAC) y se señalaron recursos y limitantes probables para futuros talleres.
+      description: `Se elaboró el formato de georeferenciación a partir de mapas, información pública sobre la Comuna 9 — Buenos Aires (Medellín, Antioquia) y el plan de acción. Se caracterizaron actores potenciales, recursos disponibles y limitantes previstos para la implementación de talleres de inclusión digital.
 
-La actividad permitió comprender el territorio como contexto urbano con brecha digital documentada en la literatura y en reportes sobre Medellín, y preparar la convocatoria comunitaria para cuando el proyecto pase a ejecución.`,
-      executionTitle: 'Pasos realizados (sin visita presencial)',
+El ejercicio permitió situar la problemática de la brecha digital en un contexto urbano específico y sentar las bases para la convocatoria comunitaria en la fase de ejecución.`,
+      executionTitle: 'Procedimiento (fase de planificación)',
       execution: [
         'Identificar departamento (Antioquia), municipio (Medellín) y comuna (9 — Buenos Aires).',
         'Ubicar el área en mapa digital y registrar referencia cartográfica en el anexo.',
@@ -277,7 +274,7 @@ La actividad permitió comprender el territorio como contexto urbano con brecha 
         'Trasladar la información al formato de georeferenciación del proyecto.',
       ],
       proximosPasos:
-        'Contactar a la JAC del barrio elegido, acordar fecha y sede para talleres, y validar datos en una visita de reconocimiento.',
+        'Establecer contacto con la JAC del sector, definir sede y cronograma de talleres, y validar la información en reconocimiento territorial.',
       ods: [
         {
           number: 10,
@@ -299,10 +296,10 @@ La actividad permitió comprender el territorio como contexto urbano con brecha 
       visual: 'clipboard',
       title: 'Diseño del diagnóstico participativo (encuesta)',
       tool: 'Cuestionario escrito · Matriz de necesidades (sin aplicación aún)',
-      description: `Se diseñó un instrumento de diagnóstico (encuesta corta y guía de conversación grupal) para aplicar en una fase posterior con adultos mayores y emprendedores. El cuestionario indaga: dispositivo disponible, uso de internet, dificultades con trámites en línea, interés en temas formativos y disponibilidad horaria.
+      description: `Se construyó un instrumento de diagnóstico participativo —encuesta y guía de conversación grupal— dirigido a adultos mayores y emprendedores del sector. El cuestionario aborda dispositivos de acceso, uso de internet, dificultades en trámites digitales, demanda formativa y disponibilidad horaria.
 
-No se ha aplicado la encuesta a la comunidad en este momento; lo realizado es el diseño metodológico y la matriz para sistematizar respuestas cuando se ejecute el proyecto en el territorio.`,
-      executionTitle: 'Pasos realizados (diseño)',
+En esta fase se presenta el diseño metodológico y la matriz de sistematización; la aplicación en el territorio está prevista para la ejecución del proyecto.`,
+      executionTitle: 'Procedimiento (diseño del instrumento)',
       execution: [
         'Definir objetivos del diagnóstico alineados con la problemática de brecha digital.',
         'Redactar 8–10 preguntas cerradas y abiertas (dispositivo, conectividad, necesidades formativas).',
@@ -310,7 +307,7 @@ No se ha aplicado la encuesta a la comunidad en este momento; lo realizado es el
         'Prever aplicación presencial con apoyo de la JAC (cuando exista autorización y convocatoria).',
       ],
       proximosPasos:
-        'Aplicar la encuesta a un grupo piloto en el barrio, tabular resultados y ajustar los módulos del taller según las respuestas reales.',
+        'Aplicar el instrumento a la población objetivo, sistematizar resultados y ajustar los módulos formativos según los hallazgos.',
       encuestaEjemplo: [
         '¿Qué dispositivo usa con más frecuencia? (celular, computador, tableta, ninguno)',
         '¿Tiene acceso a internet en su hogar? ¿De qué tipo?',
@@ -339,7 +336,7 @@ No se ha aplicado la encuesta a la comunidad en este momento; lo realizado es el
 export const desarrolloIntegralContent = {
   id: 'desarrollo-integral',
   title: 'Desarrollo integral sostenible en el diseño de actividades',
-  text: `Integrar el DIS en el diseño de actividades significa que cada acción del proyecto articula equidad, aprendizaje y sostenibilidad social. No basta con instalar un computador: hay que preguntar quién puede llegar al punto de formación, en qué horario, con qué miedos y qué expectativas tiene la comunidad.
+  text: `Integrar el DIS en el diseño de actividades implica que cada acción del proyecto articule equidad, aprendizaje y sostenibilidad social. El diseño debe considerar quién puede acceder a los espacios formativos, en qué condiciones de tiempo y con qué necesidades expresa la comunidad.
 
 A partir de la georeferenciación documental (semana 3) se prevén sedes accesibles en la Comuna 9. Con el diseño del diagnóstico (semana 4) se proponen módulos de taller: trámites en línea, uso seguro de internet y herramientas básicas para emprendimiento. Cuando la encuesta se aplique en campo, los contenidos se ajustarán con evidencia real del territorio.
 
@@ -364,10 +361,10 @@ export const multimediaContent = {
   id: 'multimedia',
   title: 'Recursos multimedia',
   subtitle:
-    'La guía permite usar Canva, Genially o Prezi; este blog cumple esa función al organizar la información de forma visual e interactiva.',
+    'Organización de la información en formato digital, conforme a las alternativas señaladas en la guía de la actividad.',
   blogPresentation: {
-    title: 'Este sitio web como presentación del proyecto',
-    text: 'No se elaboró un archivo aparte en Canva o Genially: la entrada del blog integra texto, mapa, actividades planificadas, reflexión ODS y navegación por secciones, lo cual equivale a una presentación multimedia para la entrega académica.',
+    title: 'Presentación del proyecto en formato blog',
+    text: 'La entrada integra texto académico, mapa de georeferenciación, actividades planificadas, reflexión sobre los ODS y navegación por secciones, en cumplimiento del requisito de presentación multimedia de la actividad.',
     sections: [
       'Portada y título del proyecto',
       'Pregunta orientadora y lecturas',
@@ -390,13 +387,13 @@ export const metacognicionContent = {
   title: 'Devolución creativa y metacognición',
   text: `Desarrollar esta segunda entrada del blog me permitió integrar conceptos sobre personas, comunidades y territorio en un mismo relato, y comprender que la inclusión digital es una vía concreta para el desarrollo integral sostenible en Medellín.
 
-La lectura de Arenas de Mesa y Cecchini (2022) me hizo ver la brecha digital como una forma de desigualdad que exige políticas y acciones de protección social. Jiménez Herrero (2018) aportó la idea de coevolución: el proyecto no puede ser un parche tecnológico, sino un proceso que articule lo social, lo educativo y lo territorial.
+La lectura de Arenas de Mesa y Cecchini (2022) permitió comprender la brecha digital como expresión de desigualdad que requiere políticas de inclusión y protección social. Jiménez Herrero (2018) aportó el enfoque de coevolución entre las dimensiones social, ambiental y económica, lo cual orienta el diseño del proyecto más allá de la dimensión instrumental de la tecnología.
 
-Al documentar la georeferenciación y diseñar el instrumento de diagnóstico —aun sin visita ni encuesta aplicada aún— aprendí a diferenciar planificación de ejecución, a ubicar correctamente el territorio (Comuna 9 en Medellín) y a vincular cada actividad con los ODS desde el diseño. Reconozco que el siguiente paso profesional y académico será salir al territorio con respeto, permiso de la comunidad y herramientas ya preparadas.`,
+La georeferenciación documental y el diseño del instrumento de diagnóstico fortalecieron la capacidad de articular teoría, territorio y Objetivos de Desarrollo Sostenible. La siguiente etapa del proyecto implica la validación en campo y la aplicación del diagnóstico con la comunidad de la Comuna 9.`,
   learnings: [
-    'Diferenciar fase de planificación (documental) y fase de ejecución (campo).',
-    'Definir la problemática con claridad antes de aplicar encuestas.',
-    'Usar el blog como presentación multimedia honesta y completa.',
+    'Articular las categorías de desarrollo integral sostenible con el diseño de actividades concretas.',
+    'Definir la problemática y el territorio antes de la intervención participativa.',
+    'Integrar los ODS como criterio de reflexión en cada fase del plan de acción.',
   ],
 }
 

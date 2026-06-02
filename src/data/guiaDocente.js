@@ -2,11 +2,12 @@
 
 export const guiaDocenteContent = {
   id: 'guia-docente',
-  title: 'Guía de lectura para el docente',
+  title: 'Índice de la entrega',
   subtitle:
-    'Esta página es la entrega de la actividad «Blog — Segunda parte: contexto y definición de la problemática» (tercera entrada del blog).',
+    'Entrega de la actividad «Blog — Segunda parte: contexto y definición de la problemática» (tercera entrada del blog).',
   url: 'https://4lejandroquintero.github.io/inclusion-digital-medellin/',
   actividad: 'Práctica en Responsabilidad Social · UNIMINUTO',
+  rutaLabel: 'Ruta de revisión por secciones',
   ruta: [
     {
       id: 'entrada-2',
@@ -16,12 +17,12 @@ export const guiaDocenteContent = {
     {
       id: 'pregunta-orientadora',
       label: '2. Pregunta orientadora (Ver)',
-      requisito: '¿Cómo se integra el DIS en el diseño de actividades?',
+      requisito: 'Integración del desarrollo integral sostenible en el diseño de actividades',
     },
     {
       id: 'lecturas',
       label: '3. Síntesis de lecturas (Juzgar)',
-      requisito: 'Arenas & Cecchini (2022) y Jiménez Herrero (2018) + investigación adicional',
+      requisito: 'Arenas & Cecchini (2022) y Jiménez Herrero (2018); investigación adicional',
     },
     {
       id: 'contexto',
@@ -31,7 +32,7 @@ export const guiaDocenteContent = {
     {
       id: 'problematica',
       label: '5. Definición de la problemática',
-      requisito: 'Brecha digital enunciada con claridad',
+      requisito: 'Brecha digital — enunciado problemático',
     },
     {
       id: 'plan-accion',
@@ -41,34 +42,34 @@ export const guiaDocenteContent = {
     {
       id: 'georeferenciacion',
       label: '7. Formato de georeferenciación',
-      requisito: 'Anexo complementado (mapa y datos del territorio)',
+      requisito: 'Anexo complementado',
     },
     {
       id: 'actividades',
       label: '8. Actividades semanas 3 y 4',
-      requisito: 'Dos actividades + reflexión ODS en cada una',
+      requisito: 'Dos actividades con reflexión ODS',
     },
     {
       id: 'desarrollo-integral',
       label: '9. Desarrollo integral sostenible',
-      requisito: 'Articulación DIS con las actividades',
+      requisito: 'Articulación DIS — actividades',
     },
     {
       id: 'multimedia',
-      label: '10. Multimedia',
-      requisito: 'Blog como presentación + video TED de bibliografía',
+      label: '10. Recursos multimedia',
+      requisito: 'Presentación en blog y video de bibliografía',
     },
     {
       id: 'metacognicion',
       label: '11. Metacognición',
-      requisito: 'Devolución creativa de la actividad',
+      requisito: 'Devolución de la actividad',
     },
     {
       id: 'referencias',
-      label: '12. Referencias APA',
-      requisito: 'Fuentes básicas y complementarias',
+      label: '12. Referencias',
+      requisito: 'Fuentes en formato APA',
     },
   ],
   notaEntrega:
-    'Fase de planificación: georeferenciación documental y encuesta diseñada (sin visita de campo ni aplicación de encuesta aún). Detalle en la sección «Enfoque».',
+    'Alcance: fase de planificación. Georeferenciación documental e instrumento de diagnóstico diseñado. Detalle en «Alcance metodológico».',
 }

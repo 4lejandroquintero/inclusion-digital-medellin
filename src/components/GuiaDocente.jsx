@@ -20,17 +20,14 @@ export default function GuiaDocente() {
               <h2 className="font-serif text-xl font-bold sm:text-2xl">
                 {guiaDocenteContent.title}
               </h2>
+              <p className="mt-1 text-sm text-primary-100">{guiaDocenteContent.subtitle}</p>
             </div>
           </div>
         </div>
 
         <div className="space-y-6 p-6 sm:p-8">
-          <p className="text-sm leading-relaxed text-slate-600 sm:text-base">
-            {guiaDocenteContent.subtitle}
-          </p>
-
           <div className="rounded-xl bg-slate-50 px-4 py-3 ring-1 ring-slate-200">
-            <p className="text-xs font-bold uppercase text-slate-500">Enlace de entrega (GitHub Pages)</p>
+            <p className="text-xs font-bold uppercase text-slate-500">Enlace de la entrega</p>
             <a
               href={guiaDocenteContent.url}
               className="mt-1 break-all text-sm font-semibold text-primary-700 hover:underline"
@@ -42,7 +39,7 @@ export default function GuiaDocente() {
 
           <div>
             <p className="mb-3 text-sm font-bold text-slate-800">
-              Orden sugerido de revisión (clic para ir a cada sección):
+              {guiaDocenteContent.rutaLabel}
             </p>
             <ol className="space-y-2">
               {guiaDocenteContent.ruta.map((paso) => (
@@ -69,7 +66,7 @@ export default function GuiaDocente() {
           </div>
 
           <p className="rounded-lg bg-amber-50 px-4 py-3 text-xs leading-relaxed text-amber-900 ring-1 ring-amber-200">
-            <strong>Nota para evaluación:</strong> {guiaDocenteContent.notaEntrega}
+            <strong>Alcance metodológico:</strong> {guiaDocenteContent.notaEntrega}
           </p>
         </div>
       </div>

@@ -44,7 +44,7 @@ export default function ActividadesPlan() {
                 <div className="flex aspect-[4/3] flex-col items-center justify-center bg-gradient-to-br from-primary-600 to-primary-900 p-8 text-center text-white">
                   <VisualIcon className="h-20 w-20 text-primary-200" aria-hidden="true" />
                   <p className="mt-4 text-sm font-medium text-primary-100">
-                    Recurso ilustrativo · sin registro fotográfico de campo
+                    Representación esquemática de la actividad
                   </p>
                   <span className="mt-4 rounded-full bg-white/20 px-4 py-1 text-xs font-bold uppercase tracking-wide">
                     {activity.status}
@@ -92,7 +92,7 @@ export default function ActividadesPlan() {
                 {activity.encuestaEjemplo && (
                   <div className="mt-8 rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200">
                     <h4 className="text-sm font-bold text-slate-800">
-                      Ejemplo de preguntas (instrumento diseñado, no aplicado)
+                      Ítems del instrumento de diagnóstico (diseño)
                     </h4>
                     <ul className="mt-3 list-inside list-decimal space-y-2 text-sm text-slate-600">
                       {activity.encuestaEjemplo.map((q) => (
