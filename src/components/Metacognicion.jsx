@@ -3,13 +3,13 @@ import SectionWrapper from './SectionWrapper'
 import SectionHeading from './SectionHeading'
 import { metacognicionContent } from '../data/content'
 
-export default function Metacognicion() {
+export default function Metacognicion({
+  content = metacognicionContent,
+  badge = 'Devolución creativa · Metacognición',
+}) {
   return (
-    <SectionWrapper id={metacognicionContent.id} altBg>
-      <SectionHeading
-        title={metacognicionContent.title}
-        badge="Devolución creativa · Metacognición"
-      />
+    <SectionWrapper id={content.id} altBg>
+      <SectionHeading title={content.title} badge={badge} />
 
       <div className="mt-12 grid gap-10 lg:grid-cols-3">
         <div className="relative lg:col-span-1">
@@ -21,10 +21,10 @@ export default function Metacognicion() {
         </div>
         <div className="lg:col-span-2">
           <p className="whitespace-pre-line text-base leading-relaxed text-slate-600 sm:text-lg">
-            {metacognicionContent.text}
+            {content.text}
           </p>
           <ul className="mt-8 space-y-4">
-            {metacognicionContent.learnings.map((item) => (
+            {content.learnings.map((item) => (
               <li
                 key={item}
                 className="flex items-center gap-4 rounded-xl border border-primary-100 bg-white px-5 py-4 shadow-sm"

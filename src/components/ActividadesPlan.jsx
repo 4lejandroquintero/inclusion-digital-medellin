@@ -1,37 +1,44 @@
-import { Calendar, Wrench, Target, Map, ClipboardList } from 'lucide-react'
+import { Calendar, Wrench, Target, Map, ClipboardList, Monitor, BarChart3 } from 'lucide-react'
 import SectionWrapper from './SectionWrapper'
 import SectionHeading from './SectionHeading'
 import { actividadesContent } from '../data/content'
 
 const odsColors = {
   4: 'bg-red-600',
+  8: 'bg-rose-700',
   9: 'bg-orange-600',
   10: 'bg-pink-700',
   11: 'bg-amber-600',
+  17: 'bg-blue-700',
 }
 
 const visualIcons = {
   map: Map,
   clipboard: ClipboardList,
+  monitor: Monitor,
+  chart: BarChart3,
 }
 
-export default function ActividadesPlan() {
+export default function ActividadesPlan({
+  content = actividadesContent,
+  badge = 'Actuar · Semanas 3 y 4',
+}) {
   return (
-    <SectionWrapper id={actividadesContent.id}>
+    <SectionWrapper id={content.id}>
       <SectionHeading
-        title={actividadesContent.title}
-        subtitle={actividadesContent.subtitle}
-        badge="Actuar · Semanas 3 y 4"
+        title={content.title}
+        subtitle={content.subtitle}
+        badge={badge}
       />
 
-      {actividadesContent.disclaimer && (
+      {content.disclaimer && (
         <p className="mx-auto mt-8 max-w-4xl rounded-xl bg-slate-100 px-6 py-4 text-center text-sm leading-relaxed text-slate-600">
-          {actividadesContent.disclaimer}
+          {content.disclaimer}
         </p>
       )}
 
       <div className="mt-14 space-y-16">
-        {actividadesContent.activities.map((activity, index) => {
+        {content.activities.map((activity, index) => {
           const VisualIcon = visualIcons[activity.visual] || Map
           return (
             <article
@@ -97,6 +104,36 @@ export default function ActividadesPlan() {
                     <ul className="mt-3 list-inside list-decimal space-y-2 text-sm text-slate-600">
                       {activity.encuestaEjemplo.map((q) => (
                         <li key={q}>{q}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {activity.modulosFormativos && (
+                  <div className="mt-8 rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <h4 className="text-sm font-bold text-slate-800">Módulos formativos diseñados</h4>
+                    <ul className="mt-3 space-y-3">
+                      {activity.modulosFormativos.map((mod) => (
+                        <li
+                          key={mod.nombre}
+                          className="rounded-lg bg-white px-4 py-3 text-sm ring-1 ring-slate-100"
+                        >
+                          <span className="font-semibold text-slate-800">{mod.nombre}</span>
+                          <span className="mt-1 block text-slate-500">
+                            {mod.duracion} · {mod.publico}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {activity.indicadoresEjemplo && (
+                  <div className="mt-8 rounded-xl bg-slate-50 p-5 ring-1 ring-slate-200">
+                    <h4 className="text-sm font-bold text-slate-800">Indicadores de evaluación</h4>
+                    <ul className="mt-3 list-inside list-disc space-y-2 text-sm text-slate-600">
+                      {activity.indicadoresEjemplo.map((ind) => (
+                        <li key={ind}>{ind}</li>
                       ))}
                     </ul>
                   </div>

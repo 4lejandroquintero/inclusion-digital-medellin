@@ -1,80 +1,63 @@
-/** Ruta sugerida para quien evalúa la actividad */
+/** Ruta sugerida para quien evalúa la actividad — Semana 6 */
 
 export const guiaDocenteContent = {
   id: 'guia-docente',
   title: 'Índice de la entrega',
   subtitle:
-    'Entrega de la actividad «Blog — Segunda parte: contexto y definición de la problemática» (tercera entrada del blog).',
+    'Entrega de la actividad «Blog — Tercera parte del proyecto: consolidación y actualización de anexos» (cuarta entrada del blog · Semana 6).',
   url: 'https://4lejandroquintero.github.io/inclusion-digital-medellin/',
   actividad: 'Práctica en Responsabilidad Social · UNIMINUTO',
-  rutaLabel: 'Ruta de revisión por secciones',
+  rutaLabel: 'Ruta de revisión — Semana 6',
+  rutaSemana5Label: 'Contenido de la Semana 5 (entrega anterior)',
   ruta: [
     {
-      id: 'entrada-2',
-      label: '1. Identificación de la entrada',
-      requisito: 'Título, segunda parte del proyecto y tercera entrada del blog',
+      id: 'entrada-3',
+      label: '1. Identificación de la entrada (Semana 6)',
+      requisito: 'Tercera parte del proyecto y cuarta entrada del blog',
     },
     {
-      id: 'entrada-2',
-      label: '2. Pregunta orientadora (Ver)',
-      requisito: 'Integración del DIS en el diseño de actividades (sección Entrada II)',
+      id: 'cambios',
+      label: '2. Cambios respecto a la Semana 5',
+      requisito: 'Registro de actualizaciones en anexos, plan y actividades',
     },
     {
-      id: 'lecturas',
-      label: '3. Síntesis de lecturas (Juzgar)',
-      requisito: 'Arenas & Cecchini (2022) y Jiménez Herrero (2018); investigación adicional',
+      id: 'georeferenciacion-actualizada',
+      label: '3. Anexo I — Georeferenciación actualizada',
+      requisito: 'Formato complementado con precisión territorial (Semana 6)',
     },
     {
-      id: 'contexto',
-      label: '4. Contexto social y territorial',
-      requisito: 'Personas, comunidad y territorio — Comuna 9, Medellín',
+      id: 'anexo-diagnostico',
+      label: '4. Anexo II — Matriz de diagnóstico participativo',
+      requisito: 'Instrumento ampliado y matriz de sistematización',
     },
     {
-      id: 'problematica',
-      label: '5. Definición de la problemática',
-      requisito: 'Brecha digital — enunciado problemático',
+      id: 'actividades-semana-6',
+      label: '5. Actividades semanas 5 y 6 del curso',
+      requisito: 'Diseño de talleres y protocolo de evaluación + reflexión ODS',
     },
     {
       id: 'plan-accion',
       label: '6. Retoma del plan de acción',
-      requisito: 'Actuar — articulación con el proyecto',
+      requisito: 'Avance actualizado en fases 4 y 5',
     },
     {
-      id: 'georeferenciacion',
-      label: '7. Formato de georeferenciación',
-      requisito: 'Anexo complementado',
-    },
-    {
-      id: 'actividades',
-      label: '8. Actividades semanas 3 y 4',
-      requisito: 'Dos actividades con reflexión ODS',
-    },
-    {
-      id: 'desarrollo-integral',
-      label: '9. Desarrollo integral sostenible',
-      requisito: 'Articulación DIS — actividades',
-    },
-    {
-      id: 'objetivos',
-      label: '10. Objetivos y justificación',
-      requisito: 'Objetivos del proyecto y fundamentación',
-    },
-    {
-      id: 'multimedia',
-      label: '11. Recursos multimedia',
-      requisito: 'Presentación en blog y video de bibliografía',
-    },
-    {
-      id: 'metacognicion',
-      label: '12. Metacognición',
-      requisito: 'Devolución de la actividad',
+      id: 'metacognicion-semana-6',
+      label: '7. Reflexión final del proyecto',
+      requisito: 'Devolución creativa y metacognición de cierre',
     },
     {
       id: 'referencias',
-      label: '13. Referencias',
+      label: '8. Referencias',
       requisito: 'Fuentes en formato APA',
     },
   ],
+  rutaSemana5: [
+    { id: 'entrada-2', label: 'Entrada II — Semana 5', requisito: 'Contexto y problemática' },
+    { id: 'lecturas', label: 'Síntesis de lecturas', requisito: 'Ver · Juzgar' },
+    { id: 'georeferenciacion', label: 'Territorio (versión inicial)', requisito: 'Anexo georeferenciación S5' },
+    { id: 'actividades', label: 'Actividades S3–4', requisito: 'Georef. y diseño de encuesta' },
+    { id: 'metacognicion', label: 'Reflexión S5', requisito: 'Metacognición entrega anterior' },
+  ],
   notaEntrega:
-    'Alcance: fase de planificación. Georeferenciación documental e instrumento de diagnóstico diseñado. Detalle en «Alcance metodológico».',
+    'Alcance: fase de planificación y diseño. Anexos actualizados, módulos formativos y protocolo de evaluación diseñados. La ejecución presencial permanece programada. La Semana 5 permanece accesible en el menú para consulta comparativa.',
 }

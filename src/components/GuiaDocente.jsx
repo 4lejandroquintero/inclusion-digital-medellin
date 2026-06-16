@@ -48,10 +48,10 @@ export default function GuiaDocente({ onNavigate }) {
                   <button
                     type="button"
                     onClick={() => goTo(paso.id)}
-                    className="group flex w-full items-start gap-3 rounded-lg border border-slate-100 bg-slate-50/80 px-4 py-3 text-left transition hover:border-primary-200 hover:bg-primary-50"
+                    className="group flex w-full items-start gap-3 rounded-lg border border-slate-100 bg-slate-50/80 px-4 py-3 text-left transition hover:border-emerald-200 hover:bg-emerald-50"
                   >
                     <ChevronRight
-                      className="mt-0.5 h-5 w-5 shrink-0 text-primary-500 transition group-hover:translate-x-0.5"
+                      className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600 transition group-hover:translate-x-0.5"
                       aria-hidden="true"
                     />
                     <span>
@@ -65,6 +65,36 @@ export default function GuiaDocente({ onNavigate }) {
               ))}
             </ol>
           </div>
+
+          {guiaDocenteContent.rutaSemana5 && (
+            <div>
+              <p className="mb-3 text-sm font-bold text-slate-800">
+                {guiaDocenteContent.rutaSemana5Label}
+              </p>
+              <ol className="space-y-2">
+                {guiaDocenteContent.rutaSemana5.map((paso) => (
+                  <li key={paso.label}>
+                    <button
+                      type="button"
+                      onClick={() => goTo(paso.id)}
+                      className="group flex w-full items-start gap-3 rounded-lg border border-slate-100 bg-slate-50/50 px-4 py-3 text-left transition hover:border-primary-200 hover:bg-primary-50"
+                    >
+                      <ChevronRight
+                        className="mt-0.5 h-5 w-5 shrink-0 text-primary-400 transition group-hover:translate-x-0.5"
+                        aria-hidden="true"
+                      />
+                      <span>
+                        <span className="block text-sm font-medium text-slate-700">
+                          {paso.label}
+                        </span>
+                        <span className="mt-0.5 block text-xs text-slate-400">{paso.requisito}</span>
+                      </span>
+                    </button>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
 
           <p className="rounded-lg bg-amber-50 px-4 py-3 text-xs leading-relaxed text-amber-900 ring-1 ring-amber-200">
             <strong>Alcance metodológico:</strong> {guiaDocenteContent.notaEntrega}

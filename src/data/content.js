@@ -1,7 +1,7 @@
-/** Contenido textual del blog académico — Parte 2: contexto y problemática */
+/** Contenido textual del blog académico — Proyecto Social de Formación */
 
 export const heroContent = {
-  badge: 'Tercera entrada del blog · Segunda parte del proyecto',
+  badge: 'Cuarta entrada del blog · Tercera parte del proyecto',
   title: 'Puertas digitales abiertas',
   subtitle:
     'Territorio, equidad y desarrollo integral sostenible en la Comuna 9 de Medellín.',
@@ -15,42 +15,42 @@ export const planAccionContent = {
   id: 'plan-accion',
   title: 'Retoma del plan de acción',
   subtitle:
-    'Articulación entre el plan de acción del Proyecto Social de Formación y las actividades de las semanas 3 y 4.',
+    'Articulación entre el plan de acción del Proyecto Social de Formación y las actividades documentadas en las semanas 3 a 6 del curso.',
   intro:
-    'El plan de acción organiza el proyecto en fases. En esta entrada (tercera del blog / segunda parte del contenido) se retoman las fases de diagnóstico y planificación territorial, que corresponden a las actividades de las semanas 3 y 4 del curso.',
+    'El plan de acción organiza el proyecto en cinco fases. Las entradas III y IV del blog (semanas 5 y 6) retoman, respectivamente, el diagnóstico-planificación y el diseño de ejecución-evaluación. En esta cuarta entrada se actualizan los avances de las fases 4 y 5.',
   phases: [
     {
       fase: '1. Identificación',
       actividades: 'Definición del tema, población objetivo y problemática (brecha digital).',
-      avance: 'Consolidado en secciones de problemática y justificación.',
+      avance: 'Semana 5 · consolidado en problemática y justificación.',
     },
     {
       fase: '2. Diagnóstico territorial',
       actividades: 'Georeferenciación y caracterización de la Comuna 9 — Buenos Aires.',
-      avance: 'Semana 3 · formato anexo y mapa en este blog.',
+      avance: 'Semana 3 · anexo inicial; actualizado en Semana 6.',
     },
     {
       fase: '3. Diagnóstico participativo',
       actividades: 'Diseño (y futura aplicación) de encuesta sobre competencias digitales.',
-      avance: 'Semana 4 · instrumento diseñado; aplicación en campo pendiente.',
+      avance: 'Semana 4 · instrumento ampliado; matriz de sistematización en Semana 6.',
     },
     {
       fase: '4. Ejecución',
       actividades: 'Talleres de inclusión digital y acompañamiento a la comunidad.',
-      avance: 'Planificado; depende de convocatoria con JAC y resultados de encuesta.',
+      avance: 'Semana 5 (curso) · diseño de módulos formativos y propuesta de talleres.',
     },
     {
       fase: '5. Evaluación y socialización',
       actividades: 'Valoración de impacto y entrega de resultados a actores locales.',
-      avance: 'Previsto al cierre del proyecto.',
+      avance: 'Semana 6 (curso) · protocolo de evaluación y estrategia de socialización.',
     },
   ],
-  nota: 'Los datos de la sección Territorio pueden trasladarse al Formato de Georeferenciación del plan de acción cuando la institución solicite su entrega en documento aparte.',
+  nota: 'Los anexos de georeferenciación y de diagnóstico participativo pueden trasladarse al plan de acción cuando la institución solicite su entrega en documento aparte.',
 }
 
 export const entradaParte2 = {
   id: 'entrada-2',
-  week: 'Semana 5–6',
+  week: 'Semana 5',
   partLabel: 'Segunda parte del proyecto · Tercera entrada del blog',
   title: 'Contexto y definición de la problemática',
   lead: `Esta entrada retoma el Proyecto Social de Formación sobre inclusión digital en la Comuna 9 (Buenos Aires), Medellín, Antioquia. Se presentan el contexto, la problemática y el diseño de dos actividades del plan de acción correspondientes a las semanas 3 y 4, articulados con las lecturas del curso y la documentación territorial del proyecto.`,
@@ -65,12 +65,12 @@ export const entradaParte2 = {
 export const enfoqueTrabajoContent = {
   id: 'enfoque-trabajo',
   title: 'Alcance metodológico',
-  lead: 'Esta entrada corresponde a la fase de planificación y análisis del Proyecto Social de Formación. El contenido se sustenta en fuentes bibliográficas y documentación territorial; la intervención presencial y la aplicación del instrumento de diagnóstico se contemplan para la etapa de ejecución.',
+  lead: 'Esta entrega (Semana 6) consolida y refina el trabajo de planificación iniciado en la Semana 5. Se documentan los cambios realizados, se actualizan los anexos del plan de acción y se diseñan las actividades correspondientes a las fases de ejecución y evaluación. La intervención presencial permanece programada para la etapa de ejecución en campo.',
   points: [
-    'Territorio de intervención: Comuna 9 (Buenos Aires), Medellín, Antioquia.',
-    'Semanas 3 y 4: georeferenciación y caracterización con fuentes secundarias e información institucional.',
-    'Diagnóstico participativo: instrumento de encuesta diseñado; aplicación comunitaria programada en la fase de ejecución.',
-    'Presentación multimedia: organización de la información en este blog y recurso audiovisual de la bibliografía del curso.',
+    'Semana 5: contexto, problemática, georeferenciación inicial y diseño del instrumento de diagnóstico (semanas 3 y 4 del curso).',
+    'Semana 6: actualización de anexos, matriz de sistematización, diseño de talleres y protocolo de evaluación (semanas 5 y 6 del curso).',
+    'Diagnóstico participativo: instrumento ampliado a 8 ítems; aplicación comunitaria prevista en la fase de ejecución.',
+    'Presentación multimedia: blog con entradas diferenciadas, anexos actualizados y reflexión final del proyecto.',
   ],
 }
 
@@ -87,7 +87,7 @@ export const introContent = {
   id: 'inicio',
   text: `La inclusión digital es un proceso que busca garantizar el acceso y uso adecuado de las tecnologías de la información y la comunicación para todas las personas. En la actualidad, muchas comunidades presentan dificultades para acceder a herramientas digitales, lo que genera desigualdad social, educativa y laboral.
 
-En la primera entrada del blog se presentó la idea general del proyecto. En esta segunda parte profundizamos el contexto de la Comuna 9 — Buenos Aires (Medellín, Antioquia), definimos la problemática de la brecha digital y explicamos cómo dos actividades del plan de acción —georeferenciación documental y diseño del diagnóstico— se articulan con el desarrollo integral sostenible y la Agenda 2030, en coherencia con lo exigido para las semanas 3 y 4 del curso.
+En la primera entrada del blog se presentó la idea general del proyecto. La segunda parte (Semana 5 / Entrada II) profundizó el contexto de la Comuna 9 — Buenos Aires (Medellín, Antioquia), definió la problemática de la brecha digital y documentó las actividades de las semanas 3 y 4 del curso. Esta tercera parte (Semana 6 / Entrada III) consolida el plan de acción, actualiza los anexos y presenta el diseño de las fases de ejecución y evaluación.
 
 El proyecto se desarrolla desde la Responsabilidad Social Universitaria (RSU) de UNIMINUTO, en coherencia con los proyectos sociales de formación de la institución.`,
 }
@@ -216,7 +216,8 @@ export const georeferenciacionContent = {
   id: 'georeferenciacion',
   title: 'Georeferenciación del territorio',
   subtitle:
-    'Complemento al formato de georeferenciación del plan de acción (Anexo), elaborado con mapas y fuentes documentales.',
+    'Formato de georeferenciación del plan de acción — versión inicial (Semana 5).',
+  versionLabel: 'Versión inicial · Semana 5',
   jacExplicacion:
     'La Junta de Acción Comunal (JAC) es una instancia de participación ciudadana a nivel barrial, encargada de representar a la comunidad y articular proyectos con las entidades públicas. En el marco de este proyecto se identifica como actor potencial para la convocatoria y el uso de espacios comunitarios; el contacto institucional se prevé en la fase de ejecución.',
   mapEmbed:
@@ -252,7 +253,7 @@ export const actividadesContent = {
   id: 'actividades',
   title: 'Actividades del plan de acción (semanas 3 y 4)',
   subtitle:
-    'Retoma de dos actividades en fase de planificación y documentación, organizadas en esta entrada del blog.',
+    'Retoma de dos actividades en fase de planificación — entrega Semana 5 (Entrada II).',
   disclaimer:
     'Nota metodológica: las actividades se exponen en su dimensión de planificación y análisis documental. La intervención en el territorio y la aplicación del instrumento de diagnóstico corresponden a la etapa de ejecución del plan de acción.',
   activities: [
@@ -364,13 +365,12 @@ export const multimediaContent = {
     'Organización de la información en formato digital, conforme a las alternativas señaladas en la guía de la actividad.',
   blogPresentation: {
     title: 'Presentación del proyecto en formato blog',
-    text: 'La entrada integra texto académico, mapa de georeferenciación, actividades planificadas, reflexión sobre los ODS y navegación por secciones, en cumplimiento del requisito de presentación multimedia de la actividad.',
+    text: 'El blog integra dos entregas diferenciadas (Semana 5 y Semana 6), anexos actualizados, actividades planificadas con reflexión ODS, navegación por secciones y recurso audiovisual de la bibliografía del curso.',
     sections: [
       'Portada y título del proyecto',
-      'Pregunta orientadora y lecturas',
-      'Contexto y problemática (Comuna 9)',
-      'Georeferenciación y actividades semanas 3–4',
-      'Desarrollo integral sostenible y metacognición',
+      'Entrada II (S5): contexto, problemática y actividades S3–4',
+      'Entrada III (S6): cambios, anexos actualizados y actividades S5–6',
+      'Desarrollo integral sostenible y reflexión final',
     ],
   },
   video: {
@@ -462,6 +462,265 @@ export const referencias = [
 ]
 
 export const footerContent = {
-  text: 'Proyecto académico · UNIMINUTO · Práctica en Responsabilidad Social · Blog Segunda Entrada',
+  text: 'Proyecto académico · UNIMINUTO · Práctica en Responsabilidad Social · Blog — Tercera parte (Semana 6)',
   githubUrl: 'https://github.com/4lejandroquintero/inclusion-digital-medellin',
+}
+
+/* ─── Semana 6: consolidación, cambios y anexos actualizados ─── */
+
+export const entradaParte3 = {
+  id: 'entrada-3',
+  week: 'Semana 6',
+  partLabel: 'Tercera parte del proyecto · Cuarta entrada del blog',
+  title: 'Consolidación del plan y actualización de anexos',
+  lead: `Esta entrada cierra la fase de planificación del Proyecto Social de Formación sobre inclusión digital en la Comuna 9 (Buenos Aires), Medellín. Retoma las dos actividades restantes del plan de acción —diseño de talleres de ejecución y protocolo de evaluación—, documenta los cambios realizados respecto a la entrega de la Semana 5 y presenta los anexos actualizados de georeferenciación y diagnóstico participativo.`,
+  highlights: [
+    'Registro de cambios respecto a la Semana 5',
+    'Anexo de georeferenciación actualizado',
+    'Anexo de matriz de diagnóstico participativo',
+    'Actividades de diseño — fases 4 y 5 del plan',
+    'Reflexión final y metacognición del proyecto',
+  ],
+}
+
+export const cambiosActualizacionContent = {
+  id: 'cambios-actualizacion',
+  title: 'Cambios y mejoras respecto a la Semana 5',
+  subtitle:
+    'Registro de las actualizaciones realizadas en esta entrega, en coherencia con la retroalimentación del proceso y el avance del plan de acción.',
+  intro:
+    'La entrega de la Semana 5 estableció el contexto, la problemática y el diseño inicial de las actividades de las semanas 3 y 4. En la Semana 6 se refinan los anexos, se amplía el instrumento de diagnóstico y se incorporan las actividades de las fases de ejecución y evaluación del plan de acción.',
+  cambios: [
+    {
+      area: 'Georeferenciación (Anexo I)',
+      semana5: 'Caracterización general de la Comuna 9 con actores potenciales y referencia cartográfica.',
+      semana6:
+        'Precisión de barrios de intervención (Santa Elena, La Ladera, Mirador del Doce), incorporación de bibliotecas públicas y Casa de la Juventud como actores institucionales, y registro de coordenadas de referencia.',
+    },
+    {
+      area: 'Diagnóstico participativo (Anexo II)',
+      semana5: 'Instrumento con 5 ítems de ejemplo y descripción metodológica.',
+      semana6:
+        'Instrumento ampliado a 8 ítems, matriz de sistematización formal (necesidad | población | prioridad | actividad) y criterios de aplicación previstos.',
+    },
+    {
+      area: 'Plan de acción',
+      semana5: 'Avance documentado en fases 1 a 3; fases 4 y 5 en estado planificado.',
+      semana6:
+        'Diseño de módulos formativos (fase 4) y protocolo de evaluación con estrategia de socialización (fase 5).',
+    },
+    {
+      area: 'Actividades del curso',
+      semana5: 'Documentación de semanas 3 (georeferenciación) y 4 (diseño de encuesta).',
+      semana6:
+        'Documentación de semanas 5 (diseño de talleres) y 6 (evaluación y socialización), con reflexión ODS en cada una.',
+    },
+    {
+      area: 'Estructura del blog',
+      semana5: 'Entrada única con etiqueta combinada «Semana 5–6».',
+      semana6:
+        'Segmentación explícita: Semana 5 (Entrada II) y Semana 6 (Entrada III), con sección de cambios y anexos diferenciados.',
+    },
+  ],
+}
+
+export const georeferenciacionActualizadaContent = {
+  id: 'georeferenciacion-actualizada',
+  title: 'Anexo I — Georeferenciación actualizada',
+  subtitle:
+    'Actualización del formato de georeferenciación (Semana 6), con precisión territorial y actores institucionales incorporados.',
+  versionLabel: 'Versión actualizada · Semana 6',
+  versionNota:
+    'Este anexo complementa y actualiza la sección Territorio de la Semana 5. Los campos modificados o ampliados se señalan en el registro de cambios.',
+  jacExplicacion:
+    'La Junta de Acción Comunal (JAC) del sector Santa Elena — La Ladera se identifica como instancia de articulación para la convocatoria comunitaria y el uso de espacios. El contacto institucional se prevé mediante carta de presentación del proyecto a la sede UNIMINUTO y gestión con la Secretaría de Participación Ciudadana de la Alcaldía de Medellín.',
+  mapEmbed:
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.248!2d-75.552!3d6.252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428d4ed8e8f0d%3A0x8e4428d4ed8e8f0d!2sBuenos%20Aires%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1',
+  fields: [
+    { label: 'Departamento', value: 'Antioquia' },
+    { label: 'Municipio', value: 'Medellín' },
+    { label: 'Comuna', value: 'Comuna 9 — Buenos Aires' },
+    { label: 'Barrios de intervención', value: 'Santa Elena, La Ladera, Mirador del Doce' },
+    { label: 'Tipo de zona', value: 'Urbana — periferia nororiental' },
+    { label: 'Coordenadas de referencia', value: '6.252° N, 75.552° W (centroide Comuna 9)' },
+    { label: 'Población objetivo', value: 'Adultos mayores, emprendedores y hogares con brecha digital' },
+    { label: 'Espacios previstos', value: 'Biblioteca León de Greiff, Casa de la Juventud, salón comunal' },
+  ],
+  actoresTitle: 'Actores institucionales identificados',
+  actores: [
+    'JAC Santa Elena — La Ladera',
+    'Biblioteca Pública León de Greiff (Red de Bibliotecas de Medellín)',
+    'Casa de la Juventud — Comuna 9',
+    'Sede UNIMINUTO y programa de RSU',
+    'Emprendimientos del sector (ferias locales y redes de apoyo)',
+    'Grupos de adultos mayores (convocatoria prevista)',
+  ],
+  recursos: [
+    'Salón comunal con conectividad Wi-Fi (gestión vía JAC)',
+    'Biblioteca pública con sala de lectura y acceso a computadores',
+    'Casa de la Juventud con espacios formativos',
+    'Redes de emprendimiento del barrio y ferias semanales',
+  ],
+  riesgos: [
+    'Disponibilidad horaria de adultos mayores en jornada laboral',
+    'Cobertura de datos móviles irregular en sectores altos del barrio',
+    'Rotación de participantes por temporadas de empleo informal',
+  ],
+}
+
+export const anexoDiagnosticoContent = {
+  id: 'anexo-diagnostico',
+  title: 'Anexo II — Matriz de diagnóstico participativo',
+  subtitle:
+    'Instrumento ampliado y matriz de sistematización para la fase de ejecución del proyecto (actualización Semana 6).',
+  versionLabel: 'Versión actualizada · Semana 6',
+  intro:
+    'A partir del diseño inicial de la Semana 4, se amplió el instrumento a 8 ítems y se formalizó la matriz de sistematización que orientará la aplicación en campo y el ajuste de los módulos formativos.',
+  instrumentoTitle: 'Instrumento de diagnóstico (8 ítems)',
+  items: [
+    '¿Qué dispositivo utiliza con mayor frecuencia? (celular, computador, tableta, ninguno)',
+    '¿Tiene acceso a internet en su hogar? ¿De qué tipo? (fijo, móvil, prepago, sin acceso)',
+    '¿Ha realizado trámites en línea (salud, banca, gobierno)? ¿Qué dificultades encontró?',
+    '¿Conoce y utiliza aplicaciones de mensajería o redes sociales? ¿Para qué las usa?',
+    '¿Tiene un emprendimiento o actividad económica? ¿Usa herramientas digitales para promocionarlo?',
+    '¿Qué temas le interesaría aprender en un taller? (trámites, redes, ventas en línea, seguridad digital)',
+    '¿En qué horario podría asistir a un encuentro comunitario? (mañana, tarde, sábado)',
+    '¿Estaría dispuesto(a) a participar en un taller de inclusión digital en su barrio?',
+  ],
+  matrizTitle: 'Matriz de sistematización',
+  matrizHeaders: ['Necesidad identificada', 'Población', 'Prioridad', 'Actividad propuesta'],
+  matrizFilas: [
+    {
+      necesidad: 'Dificultad en trámites de salud y pensiones en línea',
+      poblacion: 'Adultos mayores',
+      prioridad: 'Alta',
+      actividad: 'Taller «Trámites digitales básicos»',
+    },
+    {
+      necesidad: 'Baja visibilidad de emprendimientos en entornos virtuales',
+      poblacion: 'Pequeños emprendedores',
+      prioridad: 'Alta',
+      actividad: 'Taller «Redes sociales y ventas en línea»',
+    },
+    {
+      necesidad: 'Uso limitado de internet más allá de entretenimiento',
+      poblacion: 'Hogares con brecha digital',
+      prioridad: 'Media',
+      actividad: 'Taller «Internet útil y seguro»',
+    },
+    {
+      necesidad: 'Desconocimiento de herramientas de mensajería institucional',
+      poblacion: 'Adultos mayores y cuidadores',
+      prioridad: 'Media',
+      actividad: 'Acompañamiento personalizado en biblioteca pública',
+    },
+  ],
+  notaAplicacion:
+    'La aplicación del instrumento se realizará en la fase de ejecución, con apoyo de la JAC y en espacios de la biblioteca pública o Casa de la Juventud. Los resultados alimentarán el ajuste de los módulos formativos diseñados en la actividad de la Semana 5.',
+}
+
+export const actividadesSemana6Content = {
+  id: 'actividades-semana-6',
+  title: 'Actividades del plan de acción (semanas 5 y 6)',
+  subtitle:
+    'Diseño de las dos actividades restantes del plan de acción, correspondientes a las fases de ejecución y evaluación.',
+  disclaimer:
+    'Nota metodológica: las actividades se presentan en su dimensión de diseño y planificación. La implementación presencial de talleres y la aplicación del protocolo de evaluación corresponden a la etapa de ejecución en el territorio.',
+  activities: [
+    {
+      week: 'Semana 5',
+      status: 'Diseño de propuesta ejecutiva',
+      visual: 'monitor',
+      title: 'Diseño de módulos formativos de inclusión digital',
+      tool: 'Guía de talleres · Cronograma tentativo · Recursos didácticos',
+      description: `Se diseñaron tres módulos formativos orientados a las necesidades identificadas en la matriz de diagnóstico: trámites digitales básicos, redes sociales y ventas en línea, e internet útil y seguro. Cada módulo contempla duración de 2 horas, materiales de apoyo en formato digital y estrategias de acompañamiento para adultos mayores.
+
+La propuesta se articula con los espacios identificados en el anexo de georeferenciación actualizado (biblioteca pública, Casa de la Juventud y salón comunal) y prevé grupos de 12 a 15 participantes por sesión.`,
+      executionTitle: 'Procedimiento (diseño de la propuesta)',
+      execution: [
+        'Revisar la matriz de diagnóstico y priorizar necesidades por población.',
+        'Definir tres módulos formativos con objetivos, contenidos y duración.',
+        'Elaborar cronograma tentativo de 6 sesiones (2 por módulo) en horarios acordes a la comunidad.',
+        'Seleccionar recursos didácticos (guías paso a paso, videos cortos, ejercicios prácticos).',
+        'Establecer criterios de convocatoria con la JAC y espacios de la Red de Bibliotecas.',
+      ],
+      proximosPasos:
+        'Gestionar autorización de espacios, convocar participantes con la JAC y ejecutar el primer taller piloto.',
+      modulosFormativos: [
+        { nombre: 'Módulo 1 — Trámites digitales básicos', duracion: '2 h', publico: 'Adultos mayores' },
+        { nombre: 'Módulo 2 — Redes sociales y ventas en línea', duracion: '2 h', publico: 'Emprendedores' },
+        { nombre: 'Módulo 3 — Internet útil y seguro', duracion: '2 h', publico: 'Población general' },
+      ],
+      ods: [
+        {
+          number: 4,
+          name: 'Educación de calidad',
+          reflection:
+            'Los módulos formativos promueven aprendizaje permanente y alfabetización digital adaptada a las necesidades reales del territorio.',
+        },
+        {
+          number: 8,
+          name: 'Trabajo decente y crecimiento económico',
+          reflection:
+            'El módulo de emprendimiento digital fortalece capacidades productivas de pequeños negocios locales en la economía digital.',
+        },
+      ],
+    },
+    {
+      week: 'Semana 6',
+      status: 'Diseño del protocolo',
+      visual: 'chart',
+      title: 'Protocolo de evaluación y estrategia de socialización',
+      tool: 'Indicadores de impacto · Encuesta de satisfacción · Plan de socialización',
+      description: `Se diseñó un protocolo de evaluación que contempla indicadores cualitativos y cuantitativos para medir el impacto de los talleres de inclusión digital. Incluye una encuesta de satisfacción post-taller, registro de asistencia y entrevistas breves a participantes.
+
+La estrategia de socialización prevé la entrega de resultados a la JAC, un informe ejecutivo para la sede UNIMINUTO y la publicación de buenas prácticas en el blog del proyecto como memoria del Proyecto Social de Formación.`,
+      executionTitle: 'Procedimiento (diseño del protocolo)',
+      execution: [
+        'Definir indicadores de impacto: asistencia, competencias adquiridas, satisfacción y percepción de utilidad.',
+        'Diseñar encuesta de satisfacción post-taller (5 ítems cerrados y 1 abierto).',
+        'Elaborar formato de registro de asistencia y bitácora de cada sesión.',
+        'Planificar entrega de resultados a actores locales (JAC, biblioteca, sede UNIMINUTO).',
+        'Redactar estrategia de socialización: informe ejecutivo y memoria en el blog.',
+      ],
+      proximosPasos:
+        'Aplicar el protocolo al cierre de la fase de ejecución y socializar resultados con la comunidad y la institución.',
+      indicadoresEjemplo: [
+        'Número de participantes por taller y tasa de asistencia',
+        'Porcentaje que reporta mayor confianza en trámites digitales (pre/post)',
+        'Nivel de satisfacción con el taller (escala 1–5)',
+        'Número de emprendedores que implementan al menos una herramienta digital',
+      ],
+      ods: [
+        {
+          number: 17,
+          name: 'Alianzas para lograr los objetivos',
+          reflection:
+            'La socialización de resultados con JAC, biblioteca y UNIMINUTO fortalece alianzas locales para la sostenibilidad del proyecto.',
+        },
+        {
+          number: 11,
+          name: 'Ciudades y comunidades sostenibles',
+          reflection:
+            'Evaluar y difundir el impacto de la inclusión digital contribuye a comunidades más participativas e informadas.',
+        },
+      ],
+    },
+  ],
+}
+
+export const metacognicionSemana6Content = {
+  id: 'metacognicion-semana-6',
+  title: 'Reflexión final del proyecto',
+  text: `El desarrollo de la Semana 6 permitió cerrar la fase de planificación del Proyecto Social de Formación con una visión más integral del territorio, las necesidades de la comunidad y las rutas de intervención. La segmentación entre la entrega de la Semana 5 y esta cuarta entrada del blog facilitó documentar con claridad los cambios realizados y la evolución de los anexos.
+
+La actualización de la georeferenciación y la formalización de la matriz de diagnóstico participativo fortalecieron la coherencia entre el plan de acción y las condiciones reales de la Comuna 9. El diseño de módulos formativos y del protocolo de evaluación completó el ciclo de planificación previo a la ejecución en campo.
+
+Desde la perspectiva del desarrollo integral sostenible, este proceso evidenció que la inclusión digital no es un fin instrumental: es una vía para la equidad, la participación ciudadana y el cumplimiento de los Objetivos de Desarrollo Sostenible. La responsabilidad social universitaria se materializa cuando el conocimiento académico se traduce en propuestas concretas, éticas y territorialmente situadas.`,
+  learnings: [
+    'Documentar cambios entre entregas como práctica de rigor académico y mejora continua.',
+    'Articular anexos, actividades y plan de acción en un relato coherente del proyecto.',
+    'Diseñar evaluación y socialización desde la planificación, no como etapa posterior.',
+    'Integrar los ODS como criterio transversal en todas las fases del proyecto.',
+  ],
 }

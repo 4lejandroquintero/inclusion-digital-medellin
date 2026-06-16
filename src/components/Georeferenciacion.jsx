@@ -3,22 +3,39 @@ import SectionWrapper from './SectionWrapper'
 import SectionHeading from './SectionHeading'
 import { georeferenciacionContent } from '../data/content'
 
-export default function Georeferenciacion() {
+export default function Georeferenciacion({
+  content = georeferenciacionContent,
+  badge = 'Actuar · Anexo georeferenciación',
+}) {
   return (
-    <SectionWrapper id={georeferenciacionContent.id} altBg>
+    <SectionWrapper id={content.id} altBg>
       <SectionHeading
-        title={georeferenciacionContent.title}
-        subtitle={georeferenciacionContent.subtitle}
-        badge="Actuar · Anexo georeferenciación"
+        title={content.title}
+        subtitle={content.subtitle}
+        badge={badge}
       />
 
-      {georeferenciacionContent.jacExplicacion && (
+      {content.versionLabel && (
+        <div className="mx-auto mt-6 flex max-w-4xl justify-center">
+          <span className="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-emerald-800">
+            {content.versionLabel}
+          </span>
+        </div>
+      )}
+
+      {content.versionNota && (
+        <p className="mx-auto mt-4 max-w-4xl text-center text-sm text-slate-500">
+          {content.versionNota}
+        </p>
+      )}
+
+      {content.jacExplicacion && (
         <details className="mt-8 rounded-xl border border-slate-200 bg-white p-6 shadow-sm open:shadow-md">
           <summary className="cursor-pointer text-sm font-bold text-primary-700">
             Juntas de Acción Comunal (JAC)
           </summary>
           <p className="mt-4 text-sm leading-relaxed text-slate-600">
-            {georeferenciacionContent.jacExplicacion}
+            {content.jacExplicacion}
           </p>
         </details>
       )}
@@ -27,7 +44,7 @@ export default function Georeferenciacion() {
         <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200">
           <iframe
             title="Mapa Comuna 9 Buenos Aires Medellín"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.248!2d-75.552!3d6.252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428d4ed8e8f0d%3A0x8e4428d4ed8e8f0d!2sBuenos%20Aires%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1"
+            src={content.mapEmbed}
             className="h-72 w-full border-0 sm:h-96"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -36,7 +53,7 @@ export default function Georeferenciacion() {
         </div>
 
         <div className="space-y-4">
-          {georeferenciacionContent.fields.map((field) => (
+          {content.fields.map((field) => (
             <div
               key={field.label}
               className="flex flex-col gap-1 rounded-xl border border-slate-100 bg-white px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
@@ -54,10 +71,10 @@ export default function Georeferenciacion() {
         <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100">
           <Users className="mb-3 h-8 w-8 text-primary-500" aria-hidden="true" />
           <h4 className="font-semibold text-slate-800">
-            {georeferenciacionContent.actoresTitle || 'Actores sociales'}
+            {content.actoresTitle || 'Actores sociales'}
           </h4>
           <ul className="mt-3 space-y-2">
-            {georeferenciacionContent.actores.map((a) => (
+            {content.actores.map((a) => (
               <li key={a} className="text-sm text-slate-600">
                 · {a}
               </li>
@@ -68,7 +85,7 @@ export default function Georeferenciacion() {
           <Package className="mb-3 h-8 w-8 text-primary-500" aria-hidden="true" />
           <h4 className="font-semibold text-slate-800">Recursos del territorio</h4>
           <ul className="mt-3 space-y-2">
-            {georeferenciacionContent.recursos.map((r) => (
+            {content.recursos.map((r) => (
               <li key={r} className="text-sm text-slate-600">
                 · {r}
               </li>
@@ -79,7 +96,7 @@ export default function Georeferenciacion() {
           <AlertTriangle className="mb-3 h-8 w-8 text-amber-500" aria-hidden="true" />
           <h4 className="font-semibold text-slate-800">Riesgos / limitantes</h4>
           <ul className="mt-3 space-y-2">
-            {georeferenciacionContent.riesgos.map((r) => (
+            {content.riesgos.map((r) => (
               <li key={r} className="text-sm text-slate-600">
                 · {r}
               </li>
