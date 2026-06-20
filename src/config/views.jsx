@@ -21,6 +21,12 @@ import Justificacion from '../components/Justificacion'
 import Multimedia from '../components/Multimedia'
 import Metacognicion from '../components/Metacognicion'
 import MetacognicionFinal from '../components/MetacognicionFinal'
+import EntradaEvaluacion7 from '../components/EntradaEvaluacion7'
+import PreguntaOrientadoraEval7 from '../components/PreguntaOrientadoraEval7'
+import EvaluacionPractica from '../components/EvaluacionPractica'
+import MetacognicionEval7 from '../components/MetacognicionEval7'
+import RetomaEvaluacion7 from '../components/RetomaEvaluacion7'
+import VideoAutoevaluacion from '../components/VideoAutoevaluacion'
 import Referencias from '../components/Referencias'
 
 /** Vista por defecto al cargar el sitio */
@@ -109,8 +115,19 @@ export const viewConfig = {
     components: [Metacognicion],
   },
   'metacognicion-semana-6': {
-    label: 'Cierre',
+    label: 'Cierre S6',
     components: [MetacognicionFinal],
+  },
+  'entrada-7': {
+    label: 'Entrada V',
+    components: [
+      EntradaEvaluacion7,
+      PreguntaOrientadoraEval7,
+      RetomaEvaluacion7,
+      EvaluacionPractica,
+      MetacognicionEval7,
+      VideoAutoevaluacion,
+    ],
   },
   referencias: {
     label: 'Referencias',
@@ -130,5 +147,10 @@ export function resolveViewId(sectionId) {
   if (sectionId === 'pregunta-orientadora') return 'entrada-2'
   if (sectionId === 'justificacion') return 'objetivos'
   if (sectionId === 'cambios-actualizacion') return 'cambios'
+  if (sectionId === 'pregunta-orientadora-eval7') return 'entrada-7'
+  if (sectionId === 'evaluacion-practica') return 'entrada-7'
+  if (sectionId === 'metacognicion-eval7') return 'entrada-7'
+  if (sectionId === 'retoma-proyecto') return 'entrada-7'
+  if (sectionId === 'video-autoevaluacion') return 'entrada-7'
   return DEFAULT_VIEW
 }

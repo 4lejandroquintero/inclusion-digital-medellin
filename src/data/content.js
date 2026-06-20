@@ -1,10 +1,10 @@
 /** Contenido textual del blog académico — Proyecto Social de Formación */
 
 export const heroContent = {
-  badge: 'Cuarta entrada del blog · Tercera parte del proyecto',
+  badge: 'Quinta entrada del blog · Evaluación 7',
   title: 'Puertas digitales abiertas',
   subtitle:
-    'Territorio, equidad y desarrollo integral sostenible en la Comuna 9 de Medellín.',
+    'Evaluación de la práctica en responsabilidad social — Comuna 9, Medellín.',
   cta: 'Ir al índice de la entrega',
   image:
     'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=900&q=80',
@@ -450,9 +450,17 @@ export const referencias = [
       '50 years of environmental research from a European perspective. The Journal of Environmental Education, 50(4-6), 378-385.',
   },
   {
-    authors: 'Pacheco Duarte, J. F. et al.',
+    authors: 'Pacheco Duarte, J. F. & Archila Quiñones, S.',
+    year: 2020,
+    title:
+      'Guía para construir teorías del cambio en programas y proyectos sociales desde los principios generales de El Minuto de Dios. Corporación Universitaria Minuto de Dios.',
+  },
+  {
+    authors:
+      'Pérez Carvajal, M. R., Betancur Rojas, C. A., Cubillos Gualdrón, F. e Investigación Social Alternativa y Consultoría, Quimera Colombia',
     year: 2022,
-    title: 'Ruta de Innovación Social: Paso a paso para desarrollar innovaciones sociales.',
+    title:
+      'Medición de impacto. Proyectos sociales de formación en la práctica de responsabilidad social (pp. 21-47). Corporación Universitaria Minuto de Dios – UNIMINUTO.',
   },
   {
     authors: 'United Nations',
@@ -462,8 +470,162 @@ export const referencias = [
 ]
 
 export const footerContent = {
-  text: 'Proyecto académico · UNIMINUTO · Práctica en Responsabilidad Social · Blog — Tercera parte (Semana 6)',
+  text: 'Proyecto académico · UNIMINUTO · Práctica en Responsabilidad Social · Blog — Evaluación 7 (Semana 7)',
   githubUrl: 'https://github.com/4lejandroquintero/inclusion-digital-medellin',
+}
+
+/* ─── Semana 7 / Evaluación 7: evaluación y cierre ─── */
+
+export const entradaEvaluacion7 = {
+  id: 'entrada-7',
+  week: 'Semana 7',
+  partLabel: 'Evaluación 7 · Quinta entrada del blog',
+  title: 'Evaluar para transformar',
+  lead: `Cierre del Proyecto Social de Formación sobre inclusión digital en la Comuna 9 (Buenos Aires), Medellín. Se evalúa la práctica como agente social, se relacionan indicadores con la teoría del cambio y se reflexiona sobre el impacto del proyecto en el territorio.`,
+  highlights: [
+    'RSU y transformación territorial',
+    'Teoría del cambio y cadena de resultados',
+    'Autoevaluación (eficacia, impacto, sostenibilidad, pertinencia)',
+    'Reflexión personal y lecciones aprendidas',
+  ],
+}
+
+export const preguntaOrientadoraEval7 = {
+  id: 'pregunta-orientadora-eval7',
+  question:
+    '¿Cómo se relaciona la responsabilidad social universitaria con la transformación de los territorios y el reconocimiento de la interdependencia entre los actores sociales?',
+  answer: `La RSU conecta el conocimiento universitario con necesidades reales del territorio. En mi proyecto, la transformación no la hace UNIMINUTO sola: requiere articulación con la JAC, la biblioteca pública, la Casa de la Juventud y la comunidad de la Comuna 9.
+
+Pacheco Duarte y Archila (2020) plantean que la teoría del cambio parte de la situación actual y la deseada, con una cadena que va de actividades a impacto. Así, la universidad aporta metodología y el territorio aporta saberes y legitimidad —sin esa interdependencia, un taller de inclusión digital sería un evento aislado, no un proceso de cambio social.`,
+}
+
+export const evaluacionPracticaContent = {
+  id: 'evaluacion-practica',
+  title: 'Teoría del cambio y autoevaluación',
+  subtitle: 'Cadena de resultados e indicadores (Pacheco Duarte & Archila, 2020; Pérez Carvajal et al., 2022).',
+  situacionActual:
+    'Brecha digital en adultos mayores, emprendedores y hogares vulnerables de la Comuna 9: poco acceso a trámites, herramientas digitales y participación en línea.',
+  situacionDeseada:
+    'Comunidad con mayor autonomía digital para acceder a servicios, promover emprendimientos y participar en la vida comunitaria.',
+  cadena: [
+    { nivel: 'Actividades', ejemplos: 'Georeferenciación, diagnóstico participativo, talleres de inclusión digital' },
+    { nivel: 'Productos', ejemplos: 'Anexos I y II, 3 módulos formativos, protocolo de evaluación' },
+    { nivel: 'Resultados', ejemplos: 'Mayor confianza en trámites digitales; emprendedores usan redes sociales' },
+    { nivel: 'Impacto', ejemplos: 'Reducción de la brecha digital y comunidad más equitativa (ODS 4, 10, 11)' },
+  ],
+  criterios: [
+    {
+      nombre: 'Eficacia',
+      texto: 'Se completaron las 5 fases del plan, los 2 anexos, 3 módulos formativos y el protocolo de evaluación.',
+    },
+    {
+      nombre: 'Impacto',
+      texto: 'Impacto en mi formación como agente social; territorio caracterizado con actores y necesidades identificadas. Indicadores listos para medir asistencia, satisfacción y competencias en ejecución.',
+    },
+    {
+      nombre: 'Sostenibilidad',
+      texto: 'Talleres diseñados para replicarse en biblioteca y Casa de la Juventud; resultados se socializarán con la JAC y UNIMINUTO.',
+    },
+    {
+      nombre: 'Pertinencia',
+      texto: 'El proyecto responde a la brecha digital real de la Comuna 9; la matriz de diagnóstico vincula necesidades con actividades concretas.',
+    },
+    {
+      nombre: 'Lecciones aprendidas',
+      texto: 'La inclusión digital es un problema de equidad; evaluar se planifica desde el inicio; el estudiante acompaña a la comunidad, no la “resuelve”.',
+    },
+  ],
+}
+
+export const metacognicionEval7Content = {
+  id: 'metacognicion-eval7',
+  title: 'Mi reflexión como agente social',
+  text: `Este proyecto me enseñó que la inclusión digital no es solo enseñar a usar un celular: es un derecho ligado a la equidad y la dignidad humana.
+
+Al inicio veía listas de actividades; con la teoría del cambio entendí cómo cada acción se conecta con un impacto en el territorio. Los criterios de Pérez Carvajal et al. (2022) me ayudaron a evaluar con honestidad: la planificación fue sólida, y la ejecución presencial en campo queda como siguiente paso.
+
+Me llevo el compromiso de seguir vinculándome con procesos comunitarios desde la RSU: conocimiento al servicio del territorio, no al revés.`,
+  learnings: [
+    'La RSU exige trabajo con la comunidad, no para la comunidad.',
+    'Indicadores y teoría del cambio dan sentido a cada actividad del plan.',
+    'Evaluar es parte del aprendizaje, no un trámite final.',
+  ],
+}
+
+/** Dejar vacío hasta subir el video a YouTube; luego pegar solo el ID (ej. dQw4w9WgXcQ) */
+export const videoAutoevaluacionContent = {
+  title: 'Video de autoevaluación',
+  subtitle:
+    'Autoevaluación de la práctica en responsabilidad social — Proyecto Puertas digitales abiertas.',
+  youtubeId: '',
+  pendiente: 'Video pendiente de publicación',
+}
+
+export const retomaProyectoContent = {
+  title: 'Retoma del Proyecto Social de Formación',
+  subtitle: 'Temáticas trabajadas a lo largo del curso y evaluadas en esta entrega.',
+  tematicas: [
+    {
+      titulo: 'Problemática y territorio',
+      texto: 'Brecha digital en la Comuna 9 — Buenos Aires (Medellín). Georeferenciación y actores: JAC, biblioteca, Casa de la Juventud.',
+    },
+    {
+      titulo: 'Diagnóstico participativo',
+      texto: 'Encuesta de 8 ítems y matriz de sistematización que vincula necesidades con talleres.',
+    },
+    {
+      titulo: 'Plan de acción',
+      texto: 'Cinco fases: identificación, diagnóstico territorial, diagnóstico participativo, ejecución y evaluación.',
+    },
+    {
+      titulo: 'Ejecución (diseño)',
+      texto: 'Tres módulos: trámites digitales, redes/ventas en línea, internet útil y seguro.',
+    },
+    {
+      titulo: 'Evaluación y ODS',
+      texto: 'Protocolo con indicadores de asistencia, satisfacción y competencias. Articulación con ODS 4, 8, 10, 11 y 17.',
+    },
+    {
+      titulo: 'Desarrollo integral sostenible',
+      texto: 'Inclusión digital como equidad y participación, no solo acceso a dispositivos (Arenas & Cecchini, 2022; Jiménez Herrero, 2018).',
+    },
+  ],
+  lecturas: [
+    {
+      fuente: 'Pacheco Duarte & Archila (2020)',
+      idea: 'La teoría del cambio ordena actividades, productos, resultados e impacto; exige supuestos, riesgos y evidencia para proyectos pertinentes.',
+    },
+    {
+      fuente: 'Pérez Carvajal et al. (2022)',
+      idea: 'La medición de impacto en proyectos de formación usa eficacia, impacto, sostenibilidad, pertinencia y lecciones aprendidas.',
+    },
+  ],
+}
+
+export const indicadoresCadenaContent = {
+  title: 'Indicadores alineados con la cadena de resultados',
+  filas: [
+    {
+      nivel: 'Actividades',
+      indicador: 'N.º de actividades planificadas ejecutadas (georef., encuesta, talleres)',
+      fuente: 'Bitácora del plan de acción',
+    },
+    {
+      nivel: 'Productos',
+      indicador: 'Anexos, módulos formativos y protocolo de evaluación elaborados',
+      fuente: 'Blog y anexos del proyecto',
+    },
+    {
+      nivel: 'Resultados',
+      indicador: '% participantes con mayor confianza en trámites digitales; satisfacción ≥ 4/5',
+      fuente: 'Encuesta post-taller y entrevistas breves',
+    },
+    {
+      nivel: 'Impacto',
+      indicador: 'Reducción percibida de la brecha digital en la población atendida',
+      fuente: 'Informe a JAC y sede UNIMINUTO',
+    },
+  ],
 }
 
 /* ─── Semana 6: consolidación, cambios y anexos actualizados ─── */

@@ -1,63 +1,52 @@
-/** Ruta sugerida para quien evalúa la actividad — Semana 6 */
+/** Ruta sugerida para quien evalúa la actividad — Semana 7 / Evaluación 7 */
 
 export const guiaDocenteContent = {
   id: 'guia-docente',
   title: 'Índice de la entrega',
   subtitle:
-    'Entrega de la actividad «Blog — Tercera parte del proyecto: consolidación y actualización de anexos» (cuarta entrada del blog · Semana 6).',
+    'Entrega de la actividad «Blog — Evaluación de la práctica en responsabilidad social» (quinta entrada del blog · Semana 7).',
   url: 'https://4lejandroquintero.github.io/inclusion-digital-medellin/',
   actividad: 'Práctica en Responsabilidad Social · UNIMINUTO',
-  rutaLabel: 'Ruta de revisión — Semana 6',
-  rutaSemana5Label: 'Contenido de la Semana 5 (entrega anterior)',
+  rutaLabel: 'Ruta de revisión — Evaluación 7',
+  rutaSemana5Label: 'Entregas anteriores (Semanas 5 y 6)',
   ruta: [
     {
-      id: 'entrada-3',
-      label: '1. Identificación de la entrada (Semana 6)',
-      requisito: 'Tercera parte del proyecto y cuarta entrada del blog',
+      id: 'entrada-7',
+      label: '1. Quinta entrada del blog (Semana 7)',
+      requisito: 'Evaluación de la práctica como agente social',
     },
     {
-      id: 'cambios',
-      label: '2. Cambios respecto a la Semana 5',
-      requisito: 'Registro de actualizaciones en anexos, plan y actividades',
+      id: 'entrada-7',
+      label: '2. Pregunta orientadora — RSU y territorio',
+      requisito: 'Ver · Juzgar (Pacheco Duarte & Archila, 2020)',
     },
     {
-      id: 'georeferenciacion-actualizada',
-      label: '3. Anexo I — Georeferenciación actualizada',
-      requisito: 'Formato complementado con precisión territorial (Semana 6)',
+      id: 'entrada-7',
+      label: '3. Teoría del cambio y autoevaluación',
+      requisito: 'Cadena de resultados + 5 criterios (Pérez Carvajal et al., 2022)',
     },
     {
-      id: 'anexo-diagnostico',
-      label: '4. Anexo II — Matriz de diagnóstico participativo',
-      requisito: 'Instrumento ampliado y matriz de sistematización',
+      id: 'entrada-7',
+      label: '4. Reflexión personal',
+      requisito: 'Devolución creativa y metacognición',
     },
     {
-      id: 'actividades-semana-6',
-      label: '5. Actividades semanas 5 y 6 del curso',
-      requisito: 'Diseño de talleres y protocolo de evaluación + reflexión ODS',
-    },
-    {
-      id: 'plan-accion',
-      label: '6. Retoma del plan de acción',
-      requisito: 'Avance actualizado en fases 4 y 5',
-    },
-    {
-      id: 'metacognicion-semana-6',
-      label: '7. Reflexión final del proyecto',
-      requisito: 'Devolución creativa y metacognición de cierre',
+      id: 'video-autoevaluacion',
+      label: '5. Video de autoevaluación',
+      requisito: 'YouTube embebido en el blog (enlace también en Word para el tutor)',
     },
     {
       id: 'referencias',
-      label: '8. Referencias',
+      label: '6. Referencias',
       requisito: 'Fuentes en formato APA',
     },
   ],
   rutaSemana5: [
     { id: 'entrada-2', label: 'Entrada II — Semana 5', requisito: 'Contexto y problemática' },
-    { id: 'lecturas', label: 'Síntesis de lecturas', requisito: 'Ver · Juzgar' },
-    { id: 'georeferenciacion', label: 'Territorio (versión inicial)', requisito: 'Anexo georeferenciación S5' },
-    { id: 'actividades', label: 'Actividades S3–4', requisito: 'Georef. y diseño de encuesta' },
-    { id: 'metacognicion', label: 'Reflexión S5', requisito: 'Metacognición entrega anterior' },
+    { id: 'entrada-3', label: 'Entrada III — Semana 6', requisito: 'Plan y anexos' },
+    { id: 'plan-accion', label: 'Plan de acción', requisito: '5 fases del proyecto' },
+    { id: 'metacognicion-semana-6', label: 'Cierre Semana 6', requisito: 'Reflexión anterior' },
   ],
   notaEntrega:
-    'Alcance: fase de planificación y diseño. Anexos actualizados, módulos formativos y protocolo de evaluación diseñados. La ejecución presencial permanece programada. La Semana 5 permanece accesible en el menú para consulta comparativa.',
+    'Esta entrega cierra el Proyecto Social de Formación con la evaluación de la práctica. El video de autoevaluación se entrega aparte en YouTube (documento Word con enlace). Complementar con el Google Forms del tutor.',
 }
