@@ -1,39 +1,41 @@
-import { Video } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 import SectionWrapper from './SectionWrapper'
 import SectionHeading from './SectionHeading'
 import { videoAutoevaluacionContent } from '../data/content'
 
 export default function VideoAutoevaluacion() {
-  const { title, subtitle, youtubeId, pendiente } = videoAutoevaluacionContent
-  const hasVideo = Boolean(youtubeId?.trim())
+  const { title, subtitle, videos } = videoAutoevaluacionContent
 
   return (
     <SectionWrapper id="video-autoevaluacion" altBg>
       <SectionHeading title={title} subtitle={subtitle} badge="Video · Evaluación 7" />
 
-      <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl bg-slate-900 shadow-xl">
-        {hasVideo ? (
-          <div className="aspect-video w-full">
-            <iframe
-              className="h-full w-full"
-              src={`https://www.youtube.com/embed/${youtubeId}`}
-              title={title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        ) : (
-          <div className="flex aspect-video flex-col items-center justify-center gap-4 p-8 text-center text-white">
-            <div className="rounded-full bg-violet-500/30 p-5">
-              <Video className="h-12 w-12 text-violet-200" aria-hidden="true" />
+      <div className="mx-auto mt-10 flex max-w-4xl flex-col gap-10">
+        {videos.map((video) => (
+          <div key={video.youtubeId}>
+            <p className="mb-3 text-sm font-semibold text-violet-700">{video.label}</p>
+            <div className="overflow-hidden rounded-2xl bg-slate-900 shadow-xl">
+              <div className="aspect-video w-full">
+                <iframe
+                  className="h-full w-full"
+                  src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                  title={`${title} — ${video.label}`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
             </div>
-            <p className="font-serif text-xl font-bold">{pendiente}</p>
-            <p className="max-w-md text-sm text-slate-300">
-              El enlace de YouTube se publicará aquí después de grabar y subir el video de
-              autoevaluación.
-            </p>
+            <a
+              href={video.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:text-primary-800"
+            >
+              Ver en YouTube
+              <ExternalLink className="h-4 w-4" aria-hidden="true" />
+            </a>
           </div>
-        )}
+        ))}
       </div>
     </SectionWrapper>
   )

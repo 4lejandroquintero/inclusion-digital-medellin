@@ -557,8 +557,18 @@ export const videoAutoevaluacionContent = {
   title: 'Video de autoevaluación',
   subtitle:
     'Autoevaluación de la práctica en responsabilidad social — Proyecto Puertas digitales abiertas.',
-  youtubeId: '',
-  pendiente: 'Video pendiente de publicación',
+  videos: [
+    {
+      label: 'Parte 1',
+      youtubeId: 'LAlkI5-hqhk',
+      url: 'https://youtu.be/LAlkI5-hqhk',
+    },
+    {
+      label: 'Parte 2',
+      youtubeId: '-TrzBK4lH18',
+      url: 'https://youtu.be/-TrzBK4lH18',
+    },
+  ],
 }
 
 export const retomaProyectoContent = {
